@@ -30,16 +30,16 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="196" column="40" selection-start="7709" selection-end="7709" vertical-scroll-proportion="-17.346153" vertical-offset="2881" max-vertical-offset="3468">
+            <state line="196" column="40" selection-start="7709" selection-end="7709" vertical-scroll-proportion="0.0" vertical-offset="2881" max-vertical-offset="3468">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sbai.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="sbai.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sbai.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="206" selection-end="206" vertical-scroll-proportion="-4.576923" vertical-offset="17" max-vertical-offset="1428">
+            <state line="7" column="22" selection-start="194" selection-end="194" vertical-scroll-proportion="0.20877193" vertical-offset="0" max-vertical-offset="1428">
               <folding />
             </state>
           </provider>
@@ -48,18 +48,16 @@
       <file leaf-file-name="compte.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/modules/compte/compte.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="40" selection-start="65" selection-end="81" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
-              <folding>
-                <element signature="e#0#40#0" expanded="false" />
-              </folding>
+            <state line="3" column="40" selection-start="65" selection-end="81" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="255">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="compte.tpl.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="compte.tpl.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/modules/compte/compte.tpl.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="16" selection-start="173" selection-end="173" vertical-scroll-proportion="0.11929824" vertical-offset="0" max-vertical-offset="570">
+            <state line="7" column="21" selection-start="245" selection-end="245" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="255">
               <folding />
             </state>
           </provider>
@@ -77,14 +75,8 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="57" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="816">
-              <folding>
-                <element signature="e#986#2659#0" expanded="false" />
-                <element signature="e#2686#4276#0" expanded="false" />
-                <element signature="e#4300#5434#0" expanded="false" />
-                <element signature="e#5459#7343#0" expanded="false" />
-                <element signature="e#7368#8915#0" expanded="false" />
-              </folding>
+            <state line="3" column="57" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="4454">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -422,14 +414,14 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="162" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="162" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="166" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../citymar" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="162" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="837" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="841" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="837" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="161" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="155" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -441,6 +433,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
     <property name="options.lastSelected" value="settings.nodejs" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.searchVisible" value="true" />
@@ -461,127 +454,7 @@
       <recent name="C:\wamp\www\cityMap\style\css" />
     </key>
   </component>
-  <component name="RestoreUpdateTree">
-    <UpdateInfo date="Moments ago" ActionInfo="_Update">
-      <UpdatedFiles>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated from server" />
-          <option name="myStatusName" value="Changed on server" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CHANGED_ON_SERVER" />
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Updated" />
-            <option name="myStatusName" value="Changed" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="UPDATED" />
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/sbai.html</PATH>
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Created" />
-            <option name="myStatusName" value="Created" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="CREATED" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Deleted" />
-            <option name="myStatusName" value="Deleted" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="true" />
-            <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Restored" />
-            <option name="myStatusName" value="Will be restored" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="RESTORED" />
-          </FILE-GROUP>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Modified" />
-          <option name="myStatusName" value="Modified" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MODIFIED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Skipped" />
-          <option name="myStatusName" value="Skipped" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="SKIPPED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with conflicts" />
-          <option name="myStatusName" value="Will be merged with conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_CONFLICTS" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with tree conflicts" />
-          <option name="myStatusName" value="Merged with tree conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with property conflicts" />
-          <option name="myStatusName" value="Will be merged with property conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged" />
-          <option name="myStatusName" value="Will be merged" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Not in repository" />
-          <option name="myStatusName" value="Not in repository" />
-          <option name="mySupportsDeletion" value="true" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UNKNOWN" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Locally added" />
-          <option name="myStatusName" value="Locally added" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="LOCALLY_ADDED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Locally removed" />
-          <option name="myStatusName" value="Locally removed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="LOCALLY_REMOVED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Switched" />
-          <option name="myStatusName" value="Switched" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="SWITCHED" />
-        </FILE-GROUP>
-      </UpdatedFiles>
-    </UpdateInfo>
-  </component>
   <component name="RunManager">
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -590,6 +463,14 @@
       <option name="saveOutputToFile" value="false" />
       <option name="showConsoleOnStdErr" value="false" />
       <option name="showConsoleOnStdOut" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
@@ -649,14 +530,18 @@
       <created>1386635664442</created>
       <updated>1386635664442</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="webstorm">
+      <created>1386637846990</created>
+      <updated>1386637846990</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5401929" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -714,16 +599,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/modules/principalsidebar/principalsidebar.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="100" selection-start="1476" selection-end="1491" vertical-scroll-proportion="0.3736842" vertical-offset="280" max-vertical-offset="1768">
-          <folding />
-        </state>
+        <state line="29" column="100" selection-start="1476" selection-end="1491" vertical-scroll-proportion="0.3736842" vertical-offset="280" max-vertical-offset="1768" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/modules/principalsidebar/principalsidebar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="182" column="31" selection-start="7122" selection-end="7122" vertical-scroll-proportion="0.7084048" vertical-offset="2681" max-vertical-offset="3264">
-          <folding />
-        </state>
+        <state line="182" column="31" selection-start="7122" selection-end="7122" vertical-scroll-proportion="0.7084048" vertical-offset="2681" max-vertical-offset="3264" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/modules/principal/principal.js">
@@ -736,8 +617,6 @@
             <element signature="e#9378#9466#0" expanded="false" />
             <element signature="e#9500#9967#0" expanded="false" />
             <element signature="e#10008#10088#0" expanded="false" />
-            <marker date="1386621682976" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1386621682976" expanded="false" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -773,21 +652,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/modules/principal/principal.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="30" selection-start="104" selection-end="175" vertical-scroll-proportion="0.05964912" vertical-offset="0" max-vertical-offset="570">
-          <folding />
-        </state>
+        <state line="2" column="30" selection-start="104" selection-end="175" vertical-scroll-proportion="0.05964912" vertical-offset="0" max-vertical-offset="570" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="57" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="816">
-          <folding>
-            <element signature="e#986#2659#0" expanded="false" />
-            <element signature="e#2686#4276#0" expanded="false" />
-            <element signature="e#4300#5434#0" expanded="false" />
-            <element signature="e#5459#7343#0" expanded="false" />
-            <element signature="e#7368#8915#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -800,7 +671,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="196" column="40" selection-start="7709" selection-end="7709" vertical-scroll-proportion="-17.346153" vertical-offset="2881" max-vertical-offset="3468">
+        <state line="196" column="40" selection-start="7709" selection-end="7709" vertical-scroll-proportion="0.0" vertical-offset="2881" max-vertical-offset="3468">
           <folding />
         </state>
       </provider>
@@ -808,22 +679,20 @@
     <entry file="file://$PROJECT_DIR$/js/modules/compte/compte.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="40" selection-start="65" selection-end="81" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
-          <folding>
-            <element signature="e#0#40#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sbai.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="206" selection-end="206" vertical-scroll-proportion="-4.576923" vertical-offset="17" max-vertical-offset="1428">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/modules/compte/compte.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="16" selection-start="173" selection-end="173" vertical-scroll-proportion="0.11929824" vertical-offset="0" max-vertical-offset="570">
+        <state line="7" column="21" selection-start="245" selection-end="245" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sbai.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="22" selection-start="194" selection-end="194" vertical-scroll-proportion="0.20877193" vertical-offset="0" max-vertical-offset="1428">
           <folding />
         </state>
       </provider>
