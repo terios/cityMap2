@@ -4,7 +4,9 @@
 myMapModule.controller('compteController', function ($scope) {
 
     $scope.init = function () {
-
+        $scope.birthday = new Date();
     }
+
+
 })
 ;

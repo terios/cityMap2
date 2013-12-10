@@ -1,7 +1,7 @@
 /**
  * Created by Terios on 11/6/13.
  */
-var myMapModule = angular.module('mymap', ['ui.bootstrap', 'ui.router', 'ui.compat', 'ngAnimate', 'restangular']);
+var myMapModule = angular.module('mymap', ['ui.bootstrap', 'kendo.directives', 'ui.router', 'ui.compat', 'ngAnimate', 'restangular']);
 
 myMapModule.factory('localisation', function () {
     var localisation = [];
