@@ -1,0 +1,16 @@
+<div ng-controller="principalController">
+    <div id="map" ng-show="afficheloader" class="google-maps" data-ng-controller="principalController"
+         data-ng-init="init()">
+        <div class="spinner-wrapper" id="loader">
+            <span class="spinner-text">Chargement ...</span>
+            <span class="spinner"></span>
+        </div>
+    </div>
+    <div class="span2 animated fadeIn" id="refresh">
+        <button ng-click="refresh()" class="btn btn-small btn-info" style="width: 100%;font-size: medium;">Actualiser
+        </button>
+    </div>
+
+</div>
+
+

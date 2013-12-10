@@ -1,0 +1,29 @@
+#nav {
+    width: 200px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: #2795b6;
+    color: #fff;
+    overflow: hidden;
+}
+
+#nav ul {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    margin: 10px;
+    list-style: none;
+}
+
+#nav a span {
+    margin: 0 10px 0 0;
+}
+
+#nav a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+}

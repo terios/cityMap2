@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
+    <link rel="stylesheet"  href="mycss.css">
+    <script src="../lib/vendor/jquery.js"></script>
+</head>
+<body style="background-color: #ffffff">
+
+<div id="nav">
+    <ul>
+        <li><a href=""><span>01</span> HomePage</a></li>
+        <li><a href=""><span>02</span> SubPage 1</a></li>
+        <li><a href=""><span>03</span> SubPage 2</a></li>
+        <li><a href=""><span>04</span> SubPage 3</a></li>
+        <li><a href=""><span>05</span> SubPage 4</a></li>
+    </ul>
+</div>
+<script>
+    $(function(){
+        $('#nav').hover(function(){
+            $(this).animate({width:'200px'},500);
+        },function(){
+            $(this).animate({width:'35px'},500);
+        }).trigger('mouseleave');
+    });
+</script>
+</body>
+</html>

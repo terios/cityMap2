@@ -1,0 +1,132 @@
+<div class="row-fluid" ng-controller="authController" style="margin-top: 30px">
+
+
+    <div class="span4" style="margin-left: 30px">
+        <button class="btn btn-small btn-info " ng-click="changeAuthSign()"
+                style="margin-left: 0;width: 200px">
+            <div style="font-size: 15px">{{indication}}</div>
+        </button>
+
+    </div>
+
+    <div class="span6 offset3 hero-unit animated fadeInDown" ng-show="afficheAuth">
+        <h3>Authentification</h3>
+
+        <div>
+            <form class="form-inline" ng-submit="submitAuthentification()">
+                <div class="control-group">
+                    <label class="control-label">Login :</label>
+
+                    <div class="controls">
+                        <input type="text" ng-model="authlogin" placeholder="votre Login" style="width: 50%">
+                        <img ng-show="authErreurLogin" src="style/img/img%20icon/error.png" width="20px"
+                             class="animated fadeIn">
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">Password :</label>
+
+                    <div class="controls">
+                        <input ng-model="authpassword" type="text"
+                               placeholder="votre mot de passe" style="width: 50%">
+                        <img ng-show="authErreurPassword"
+                             src="style/img/img%20icon/error.png" width="20px" class="animated fadeIn">
+                    </div>
+                </div>
+
+                <button class="btn btn-success" style="margin-left: 0;width: 52%;">Envoie</button>
+            </form>
+            <div style="margin-top: 60px">
+                <p>Vous connecter avec d'autre compte :</p>
+            </div>
+            <div class="span7" style="height: 50px;">
+                <a href="#"><img src="style/img/img%20icon/face_icon.png" width="40px" style="margin-right: 5px;"></a>
+                <a href="#"><img src="style/img/img%20icon/twitter_icon.png" width="40px"
+                                 style="margin-right: 5px;"></a>
+                <a href="#"><img src="style/img/img%20icon/google_icon.png" width="40px" style="margin-right: 5px;"></a>
+                <a href="#"><img src="style/img/img%20icon/linkdin_icon.png" width="40px"
+                                 style="margin-right: 5px;"></a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="span8 offset2 hero-unit animated fadeInUp" ng-hide="afficheAuth">
+        <h3>Inscription</h3>
+
+
+        <form class="form-inline" ng-submit="submitSign()"
+              style="margin-left: 30px;">
+
+            <div class="row-fluid">
+                <div class="span5">
+                    <div class="control-group">
+                        <label class="control-label">Login :</label>
+
+                        <div class="controls">
+                            <input type="text" ng-model="signlogin" placeholder="votre Login" style="width: 70%;">
+                            <img ng-show="signErreurLogin" src="style/img/img%20icon/error.png" width="20px"
+                                 class="animated fadeIn"/>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label">E-mail :</label>
+
+                        <div class="controls">
+                            <input type="email" ng-model="signemail" placeholder="votre Login" style="width: 70%;">
+                            <img ng-show="signErreurEmail" src="style/img/img%20icon/error.png" width="20px"
+                                 class="animated fadeIn"/>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label">Password :</label>
+
+                        <div class="controls">
+                            <input ng-model="signpassword" type="password"
+                                   placeholder="votre mot de passe" id="email" style="width: 70%;">
+                            <img ng-show="signErreurPassword" src="style/img/img%20icon/error.png" width="20px"
+                                 class="animated fadeIn"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="span5" style="margin-left: 50px;">
+                    <div class="control-group">
+                        <label class="control-label">ville :</label>
+
+                        <div class="controls">
+                            <select ng-model="sideVille" style="width: 70%;">
+                                <option>Casablanca</option>
+                                <option>Rabat</option>
+                                <option>Fes</option>
+                                <option>Agadir</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div style="margin-top: 60px">
+                        Vous connecter avec d'autre compte :
+                    </div>
+                    <div style="height: 50px;">
+                        <a href="#"><img src="style/img/img%20icon/face_icon.png" width="40px"
+                                         style="margin-right: 5px;"></a>
+                        <a href="#"><img src="style/img/img%20icon/twitter_icon.png" width="40px"
+                                         style="margin-right: 5px;"></a>
+                        <a href="#"><img src="style/img/img%20icon/google_icon.png" width="40px"
+                                         style="margin-right: 5px;"></a>
+                        <a href="#"><img src="style/img/img%20icon/linkdin_icon.png" width="40px"
+                                         style="margin-right: 5px;"></a>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-success" style="width: 100px">Envoie</button>
+
+        </form>
+
+
+    </div>
+
+
+</div>

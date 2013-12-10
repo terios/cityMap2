@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="mymap">
+<head>
+    <meta charset='utf-8'>
+
+    <title>wbyoko - Say Where</title>
+    <style type="text/css">
+        html {
+            height: 100%
+        }
+
+        body {
+            height: 100%;
+            margin: 0px;
+            padding: 0px
+        }
+
+        .google-map {
+            width: 100%;
+            height: 100%;
+        }
+
+        .map-control {
+            background-color: white;
+            margin: 1em;
+            padding: .5em;
+            border-radius: 1em;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body >
+
+<div class="google-map" say-where="" latitude="43.074688" longitude="-89.384294"></div>
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+<script src="lib/angular-ui-router.min.js"></script>
+<script>var myMapModule = angular.module('mymap', ["ui.router"]);</script>
+<script src="js/modules/principal/principalmapdirective.js"></script>
+</body>
+</html>

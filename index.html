@@ -1,0 +1,199 @@
+<!doctype html>
+<html ng-app="mymap">
+<head>
+    <!-- META TAGS -->
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CityMap</title>
+
+    <link rel="shortcut icon" href="style/img/template/favicon.png"/>
+
+
+    <!-- Google Web Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+          rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'
+          type='text/css'>
+
+    <!-- Style Sheet-->
+    <link rel='stylesheet' id='bootstrap-css-css' href='style/css/bootstrap5152.css?ver=1.0' type='text/css'
+          media='all'/>
+    <link rel='stylesheet' id='responsive-css-css' href='style/css/responsive5152.css?ver=1.0' type='text/css'
+          media='all'/>
+    <link rel='stylesheet' id='main-css-css' href='style/css/main5152.css?ver=1.0' type='text/css' media='all'/>
+    <link rel='stylesheet' id='custom-css-css' href='style/css/custom5152.html?ver=1.0' type='text/css' media='all'/>
+    <link rel="stylesheet" href="style/css/default.css">
+    <link rel="stylesheet" href="style/css/animationloading.css">
+    <link rel="stylesheet" href="style/css/animate.css">
+
+
+    <script src="lib/vendor/jquery.js"></script>
+    <script type='text/javascript' src='lib/custom.js'></script>
+    <script src="lib/angular.js"></script>
+    <script src="lib/angular-ui-router.min.js"></script>
+    <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.7.0.js"></script>
+    <script type="text/javascript"
+            src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
+    <script src="lib/angular-animate.js"></script>
+    <script src="lib/restangular.js"></script>
+
+    <script src="js/app.js"></script>
+    <script src="js/app.config.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <![endif]-->
+    <style type="text/css">
+
+
+        .google-maps {
+            margin-left: 2%;
+            margin-right: 0%;
+            width: 98%;
+            height: 550px;
+        }
+
+        .google-maps img {
+            max-width: none !important;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<!-- Start of Header -->
+<div class="header-wrapper">
+    <div ui-view="navbar"/>
+</div>
+<!-- End of Header -->
+
+
+<!-- Start of Page Container -->
+
+<div class="row">
+    <div>
+        <div ui-view="menu"/>
+    </div>
+    <div ui-view="content"/>
+</div>
+
+<!-- Start of Footer -->
+<footer id="footer-wrapper">
+    <div id="footer" class="container">
+        <div class="row">
+
+            <div class="span3">
+                <h2 style="color: #818a90;text-align: center">Qui somme Nous :</h2>
+
+                <div>
+                    <img src="style/img/logo-city.png" style="width: 150px;margin-left: 50px">
+                </div>
+                <p style="font-size: 15px;  text-align: center">Vous cherchez un café, un
+                    restaurant, un hôtel ...,ou vous voulez simplement visiter une ville que vous ne connaissiez pas
+                    jusqu’à
+                    présent,dorénavant tout ceci est facile grâce a CityMap a quelque clic de vous.
+                </p>
+            </div>
+
+            <div class="span7">
+                <h2 style="color: #818a90;text-align: center">Lieu les Plus visite :</h2>
+
+                <div class="row">
+                    <div class="span2">
+                        <div style="text-align: center">
+                            <img src="style/img/img%20icon/Cup%20coffee.png" width="50px">
+                        </div>
+                        <ul>
+                            <li><a style="color: #818a90">Cafe Babylone : Casablanca </a></li>
+                            <li><a style="color: #818a90">Cafe Farah : Oujda </a></li>
+                            <li><a style="color: #818a90">Cafe New Age : Agadire </a></li>
+                        </ul>
+                    </div>
+                    <div class="span2">
+                        <div style="text-align: center">
+                            <img src="style/img/img%20icon/hotel%20(1).png" style="text-align: center" width="50px">
+                        </div>
+                        <ul>
+                            <li><a style="color: #818a90">Hotel Hayati : Casablanca </a></li>
+                            <li><a style="color: #818a90">Hotel Ibis : Fes </a></li>
+                            <li><a style="color: #818a90">Hotel Chemss : Tanger </a></li>
+                        </ul>
+                    </div>
+                    <div class="span2">
+                        <div style="text-align: center">
+                            <img src="style/img/img%20icon/Pizza-icon.png" width="50px">
+                        </div>
+                        <ul>
+                            <li><a style="color: #818a90">Snack Amine : Casablanca </a></li>
+                            <li><a style="color: #818a90">ChinChang : Agadir </a></li>
+                            <li><a style="color: #818a90">Pizza Italiano : Marrakech </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="span2">
+                <section class="widget">
+                    <h2 style="color: #818a90" class="title">Gallery des Images</h2>
+
+                </section>
+            </div>
+
+        </div>
+    </div>
+    <!-- end of #footer -->
+
+    <!-- Footer Bottom -->
+    <div id="footer-bottom-wrapper">
+        <div id="footer-bottom" class="container">
+            <div class="row">
+                <div class="span6">
+                    <p class="copyright">
+                        Copyright © 2013. All Rights Reserved by KnowledgeBase.
+                    </p>
+                </div>
+                <div class="span6">
+                    <!-- Social Navigation -->
+                    <ul class="social-nav clearfix">
+                        <li class="linkedin"><a target="_blank" href="#"></a></li>
+                        <li class="stumble"><a target="_blank" href="#"></a></li>
+                        <li class="google"><a target="_blank" href="#"></a></li>
+                        <li class="deviantart"><a target="_blank" href="#"></a></li>
+                        <li class="flickr"><a target="_blank" href="#"></a></li>
+                        <li class="skype"><a target="_blank" href="skype:#?call"></a></li>
+                        <li class="rss"><a target="_blank" href="#"></a></li>
+                        <li class="twitter"><a target="_blank" href="#"></a></li>
+                        <li class="facebook"><a target="_blank" href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Footer Bottom -->
+
+</footer>
+<!-- End of Footer -->
+
+
+<a href="#top" id="scroll-top"></a>
+
+<!-- script -->
+
+<!--<script src="js/modules/navbarfooter/drop.js"></script>-->
+<script type='text/javascript' src='js/modules/principal/principal.js'></script>
+<script src="js/modules/principalsidebar/principalsidebar.js"></script>
+<script src="js/modules/navbarfooter/navfoo.js"></script>
+<script src="js/modules/navbarfooter/navConnecter.js"></script>
+<script src="js/modules/navbarfooter/navDisconnecter.js"></script>
+<script src="js/modules/auth/auth.js"></script>
+<script src="js/modules/compte/compte.js"></script>
+</body>
+</html>

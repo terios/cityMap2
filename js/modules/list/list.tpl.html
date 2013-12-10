@@ -1,0 +1,119 @@
+<div class="page-container" ng-controller="listController">
+    <div id="main" class="container">
+        <!-- start of page content -->
+        <div class="span8 main-listing">
+
+        <div ng-repeat="article in articles">
+            <article class="type-post hentry clearfix">
+
+                <header class="clearfix">
+
+                    <h3 class="post-title coffee">
+                        <a href="single.html">{{article.title}}</a>
+                    </h3>
+
+                    <!-- end of post meta -->
+
+                </header>
+                <div style="float:left; margin-right:10px;">
+                    <a class="th radius">
+                        <img ng-src="style/img/{{article.image}}" style="width: 30px;margin-bottom:5px;"><br/>
+                        <span class="success label" style="width:100%;">{{article.rate}}/10</span>
+                    </a>
+
+                </div>
+                <p style="height:100px;">{{article.desc}}<a
+                            class="readmore-link"
+                            href="http://knowledgebase.inspirythemes.com/integrating-wordpress-with-your-website/">Read
+                        more</a>
+                </p>
+                <div class="post-meta">
+                    <span class="location">{{article.city}}</span>
+                    <span class="category"><a href="#">{{article.category}}</a></span>
+                    <span class="comments"><a href="#">{{article.comments-count}} Comments</a></span>
+                    <span class="like-count">{{like-counts}}</span>
+                </div>
+
+
+            </article><br/>
+        </div>
+
+            <br/>
+            <ul class="pagination">
+                <li class="arrow unavailable"><a href="">&laquo;</a></li>
+                <li class="current"><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li class="unavailable"><a href="">&hellip;</a></li>
+                <li><a href="">12</a></li>
+                <li><a href="">13</a></li>
+                <li class="arrow"><a href="">&raquo;</a></li>
+            </ul>
+
+        </div>
+        <!-- end of page content -->
+
+
+        <!-- start of sidebar -->
+        <aside class="span4">
+            <div class="sidebar">
+
+                <form class="custom">
+                    <fieldset>
+                        <legend>Recherche</legend>
+                        <div class="row">
+                            <div class="large-10 columns">
+                                <label for="checkbox1"><input type="checkbox" id="checkbox1"
+                                                              style="display: none;"><span class="custom checkbox"
+                                                                                           style="margin-right:5px;"></span>Cafés</label>
+                                <label for="checkbox1"><input type="checkbox" id="checkbox2"
+                                                              style="display: none;"><span class="custom checkbox"
+                                                                                           style="margin-right:5px;"></span>Restaurants</label>
+                                <label for="checkbox1"><input type="checkbox" id="checkbox3"
+                                                              style="display: none;"><span class="custom checkbox"
+                                                                                           style="margin-right:5px;"></span>Hotels</label>
+                            </div>
+                        </div>
+                        <br/>
+                        <input type="text" placeholder="Keywords ..." class="large-10 columns">
+
+                        <div class="row collapse">
+                            <div class="large-5 small-5 columns">
+                                <span class="prefix">Rating</span>
+                            </div>
+                            <div class="large-7 small-7 columns" align="center">
+                                <select>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row collapse">
+                            <div class="large-5 small-5 columns">
+                                <span class="prefix">City</span>
+                            </div>
+                            <div class="large-7 small-7 columns" align="center">
+                                <select>
+                                    <option>Casablanca</option>
+                                    <option>Oujda</option>
+                                    <option>Rabat</option>
+                                </select>
+                            </div>
+                        </div>
+                        <input type="submit" class="button postfix" value="Search"/>
+                    </fieldset>
+                </form>
+
+            </div>
+        </aside>
+
+        <!-- end of sidebar -->
+
+    </div>
+</div>
+<!-- End of Page Container -->
+

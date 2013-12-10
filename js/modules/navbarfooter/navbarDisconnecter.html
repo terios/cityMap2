@@ -1,0 +1,50 @@
+<header>
+    <div class="container">
+
+
+        <div class="logo-container">
+            <!-- Website Logo -->
+            <a href="#" title="CityMap" style="color: #588ac2">
+                Logo Site
+            </a>
+        </div>
+
+
+        <!-- Start of Main Navigation -->
+        <nav class="main-nav" ng-controller="navfooController">
+            <div class="menu-top-menu-container">
+                <ul id="menu-top-menu" class="clearfix">
+                    <li class="current-menu-item"><a href="index-2.html" style="font-size: 15px">Acceuille</a></li>
+                    <li><a href="#" style="font-size: 15px">Lieu</a></li>
+                    <li><a href="#" style="font-size: 15px">Contact</a></li>
+                    <li><a href="#" style="font-size: 15px">Apropos</a></li>
+                    <li>
+                        <form id="custom-search-form" class="form-search" ng-submit="submitRechercheDetailler()">
+                            <div class="input-append">
+                                <input ng-model="recherchDetailler" type="text" class="search-query"
+                                       placeholder="recherche Detailler">
+                                <button type="submit" class="btn btn-primary">Chercher</button>
+                            </div>
+                        </form>
+                    </li>
+
+                    <li style="margin-left:150px ">
+                        <div>
+                            <div ng-controller="navDisconnecterController">
+                                <div class="btn-group">
+                                    <button class="btn btn-info" ng-click="openAuth()">Authentification / Inscription
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+        <!-- End of Main Navigation -->
+
+    </div>
+
+</header>
