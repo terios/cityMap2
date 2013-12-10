@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="810e8fcb-fd91-4614-be33-8059e5d0c931" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/kendo.common.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/modules/compte/compte.js" afterPath="$PROJECT_DIR$/js/modules/compte/compte.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/modules/compte/compte.tpl.html" afterPath="$PROJECT_DIR$/js/modules/compte/compte.tpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/modules/principal/principal.js" afterPath="$PROJECT_DIR$/js/modules/principal/principal.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cityMap.iws" />
@@ -32,7 +32,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="48" selection-start="1484" selection-end="1484" vertical-scroll-proportion="-12.423077" vertical-offset="204" max-vertical-offset="3672">
+            <state line="74" column="9" selection-start="3195" selection-end="3408" vertical-scroll-proportion="-15.038462" vertical-offset="867" max-vertical-offset="3672">
               <folding />
             </state>
           </provider>
@@ -50,7 +50,7 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="76" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4454">
+            <state line="6" column="4" selection-start="231" selection-end="253" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4471">
               <folding />
             </state>
           </provider>
@@ -59,20 +59,54 @@
       <file leaf-file-name="compte.tpl.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/modules/compte/compte.tpl.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="16" selection-start="244" selection-end="244" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="561">
+            <state line="67" column="40" selection-start="3172" selection-end="3178" vertical-scroll-proportion="-20.615385" vertical-offset="603" max-vertical-offset="1734">
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#select#0;n#div#0;n#div#2;n#form#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="compte.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="auth.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/modules/auth/auth.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="75" column="0" selection-start="1947" selection-end="1947" vertical-scroll-proportion="0.0" vertical-offset="832" max-vertical-offset="1428">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="compte.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/modules/compte/compte.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="21" selection-start="1185" selection-end="1185" vertical-scroll-proportion="0.28691274" vertical-offset="577" max-vertical-offset="1275">
+            <state line="137" column="0" selection-start="4454" selection-end="4454" vertical-scroll-proportion="0.0" vertical-offset="1801" max-vertical-offset="2958">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="principal.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/modules/principal/principal.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="239" column="0" selection-start="9511" selection-end="10009" vertical-scroll-proportion="0.0" vertical-offset="3616" max-vertical-offset="5066">
+              <folding>
+                <marker date="1386711282780" expanded="false" signature="7398:7416" placeholder="..." />
+                <marker date="1386711282780" expanded="false" signature="7437:7452" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="auth.tpl.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/modules/auth/auth.tpl.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="112" column="29" selection-start="5189" selection-end="5189" vertical-scroll-proportion="0.6561403" vertical-offset="1530" max-vertical-offset="2329">
               <folding />
             </state>
           </provider>
@@ -98,8 +132,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/js/modules/principalsidebar/principalsidebar.js" />
-        <option value="$PROJECT_DIR$/js/modules/principal/principal.js" />
         <option value="$PROJECT_DIR$/lib/ui-bootstrap-0.7.0.js" />
         <option value="$PROJECT_DIR$/js/modules/principal/principal.tpl.html" />
         <option value="$PROJECT_DIR$/js/modules/auth/auth.tpl.html" />
@@ -109,10 +141,12 @@
         <option value="$PROJECT_DIR$/js/modules/principalsidebar/principalsidebar.tpl.html" />
         <option value="$PROJECT_DIR$/style/css/default.css" />
         <option value="$PROJECT_DIR$/lib/kendo-all.js" />
-        <option value="$PROJECT_DIR$/js/app.js" />
-        <option value="$PROJECT_DIR$/js/modules/compte/compte.tpl.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/style/css/kendo.common.min.css" />
+        <option value="$PROJECT_DIR$/js/modules/principal/principal.js" />
+        <option value="$PROJECT_DIR$/js/app.js" />
+        <option value="$PROJECT_DIR$/js/modules/compte/compte.tpl.html" />
+        <option value="$PROJECT_DIR$/js/modules/auth/auth.js" />
         <option value="$PROJECT_DIR$/js/modules/compte/compte.js" />
       </list>
     </option>
@@ -526,7 +560,11 @@
       <created>1386690568295</created>
       <updated>1386690568296</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="webstorm">
+      <created>1386706237695</created>
+      <updated>1386706237695</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -587,37 +625,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/modules/principal/principal.tpl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="30" selection-start="104" selection-end="175" vertical-scroll-proportion="0.05964912" vertical-offset="0" max-vertical-offset="570" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sbai.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="34" selection-start="1602" selection-end="1787" vertical-scroll-proportion="0.0" vertical-offset="858" max-vertical-offset="1428">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/modules/list/list.tpl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="1" selection-start="1" selection-end="1" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/modules/principalsidebar/principalsidebar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="182" column="31" selection-start="7122" selection-end="7122" vertical-scroll-proportion="5.3070326" vertical-offset="0" max-vertical-offset="3264" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style/css/responsive5152.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="20825">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/style/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2550">
@@ -648,19 +655,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/app.js">
+    <entry file="file://$PROJECT_DIR$/style/css/kendo.common.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="76" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4454">
+        <state line="190" column="0" selection-start="4302" selection-end="4302" vertical-scroll-proportion="0.2915952" vertical-offset="3060" max-vertical-offset="58531">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/modules/auth/auth.tpl.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2329">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
+        <state line="74" column="9" selection-start="3195" selection-end="3408" vertical-scroll-proportion="-15.038462" vertical-offset="867" max-vertical-offset="3672">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/modules/principal/principal.tpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="41" selection-start="41" selection-end="41" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -671,34 +683,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="48" selection-start="1484" selection-end="1484" vertical-scroll-proportion="-12.423077" vertical-offset="204" max-vertical-offset="3672">
+        <state line="6" column="4" selection-start="231" selection-end="253" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4471">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style/css/kendo.common.min.css">
+    <entry file="file://$PROJECT_DIR$/js/modules/principal/principalmapdirective.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="190" column="0" selection-start="4302" selection-end="4302" vertical-scroll-proportion="0.2915952" vertical-offset="3060" max-vertical-offset="58531">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/modules/principalsidebar/principalsidebar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="182" column="31" selection-start="7122" selection-end="7122" vertical-scroll-proportion="0.7084048" vertical-offset="2681" max-vertical-offset="3264">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/modules/auth/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="0" selection-start="1947" selection-end="1947" vertical-scroll-proportion="0.0" vertical-offset="832" max-vertical-offset="1428">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/modules/compte/compte.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="16" selection-start="244" selection-end="244" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="561">
+        <state line="67" column="40" selection-start="3172" selection-end="3178" vertical-scroll-proportion="-20.615385" vertical-offset="603" max-vertical-offset="1734">
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#div#0;n#div#2;n#form#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/modules/principal/principal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="239" column="0" selection-start="9511" selection-end="10009" vertical-scroll-proportion="0.0" vertical-offset="3616" max-vertical-offset="5066">
+          <folding>
+            <marker date="1386711282780" expanded="false" signature="7398:7416" placeholder="..." />
+            <marker date="1386711282780" expanded="false" signature="7437:7452" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/modules/compte/compte.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="21" selection-start="1185" selection-end="1185" vertical-scroll-proportion="0.28691274" vertical-offset="577" max-vertical-offset="1275">
+        <state line="137" column="0" selection-start="4454" selection-end="4454" vertical-scroll-proportion="0.0" vertical-offset="1801" max-vertical-offset="2958">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/modules/auth/auth.tpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="112" column="29" selection-start="5189" selection-end="5189" vertical-scroll-proportion="0.6561403" vertical-offset="1530" max-vertical-offset="2329">
           <folding />
         </state>
       </provider>

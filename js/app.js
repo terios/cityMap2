@@ -11,6 +11,7 @@ myMapModule.factory('localisation', function () {
     localisation['motcle'] = "";
     localisation['map'];
     localisation['mapcenter'];
+    localisation['latlon'];
     return localisation;
 });
 

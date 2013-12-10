@@ -1,11 +1,17 @@
 /**
  * Created by Terios on 12/9/13.
  */
-myMapModule.controller('compteController', function ($scope) {
+myMapModule.controller('compteController', function ($scope, localisation) {
 
 
     $scope.nom = 'Lieu';
     $scope.afficheList = true;
+    $scope.activeItem = [];
+    $scope.activeItem['listVisite'] = "active";
+    $scope.activeItem['contribution'] = "";
+    $scope.activeItem['personnalisation'] = "";
+    $scope.activeItem['parametre'] = "";
+
 
     $scope.data = [
         {'nom': 'anas', 'ville': 'anas', 'categorie': 'oujda', 'id': 12},
@@ -63,6 +69,99 @@ myMapModule.controller('compteController', function ($scope) {
                 }
             ]
         });
+    }
+
+    function getlocation() {
+
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(createMap, displayError);
+        } else {
+            alert("no geolocation supported");
+        }
+    }
+
+    function createMap(position) {
+        // Set static latitude, longitude value
+
+        var latitude = position.coords.latitude;
+        var longitude = position.coords.longitude;
+
+        var latlng = new google.maps.LatLng(latitude, longitude);
+        // Set map options
+        var myOptions = {
+            zoom: 14,
+            center: latlng,
+            panControl: true,
+            zoomControl: true,
+            scaleControl: true,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        // Create map object with options
+        map = new google.maps.Map(document.getElementById("map_contribution"), myOptions);
+        // Create and set the marker
+        marker = new google.maps.Marker({
+            map: map,
+            draggable: true,
+            position: latlng
+        });
+        // Register Custom "dragend" Event
+        google.maps.event.addListener(marker, 'dragend', function () {
+            // Get the Current position, where the pointer was dropped
+            var point = marker.getPosition();
+            // Center the map at given point
+            map.panTo(point);
+            // Update the textbox
+            document.getElementById('txt_latlng').value = point.lat() + ", " + point.lng();
+        });
+    }
+
+
+    $scope.parametre = function () {
+        for (tmp in $scope.activeItem) {
+            $scope.activeItem[tmp] = "";
+        }
+        $scope.activeItem["parametre"] = "active";
+    }
+    $scope.personnalisation = function () {
+        for (tmp in $scope.activeItem) {
+            $scope.activeItem[tmp] = "";
+        }
+        $scope.activeItem["personnalisation"] = "active";
+    }
+    $scope.contribution = function () {
+        for (tmp in $scope.activeItem) {
+            $scope.activeItem[tmp] = "";
+        }
+        $scope.activeItem["contribution"] = "active";
+        $scope.afficheContribution = true;
+        $scope.afficheList = false;
+        tmp = getlocation();
+
+    }
+    $scope.listVisite = function () {
+        for (tmp in $scope.activeItem) {
+            $scope.activeItem[tmp] = "";
+        }
+        $scope.activeItem["listVisite"] = "active";
+
+        $scope.afficheContribution = false;
+        $scope.afficheList = true;
+    }
+
+
+    function displayError(error) {
+        var errorTypes = {
+            0: "Unknown error",
+            1: "Permission denied by user",
+            2: "Position is not available",
+            3: "Request timed out"
+        };
+        var errorMessage = errorTypes[error.code];
+        if (error.code == 0 || error.code == 2) {
+            errorMessage = errorMessage + " " + error.message;
+        }
+        var div = document.getElementById("location");
+        div.innerHTML = errorMessage;
     }
 
 

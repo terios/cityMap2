@@ -58,6 +58,7 @@ myMapModule.controller('principalController', function ($rootScope, $scope, loca
         localisation['lon'] = position.coords.longitude;
 
         latlon = new google.maps.LatLng(latitude, longitude);
+        localisation['latlon'] = latlon;
         mapholder = document.getElementById('map');
         $rootScope.maptype = maptype['mystyle'];
         //  console.debug('createMap() style ' + $rootScope.maptype);

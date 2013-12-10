@@ -6,18 +6,23 @@
             <div>
                 <ul class="nav nav-list">
                     <li class="nav-header">Mon Compte</li>
-                    <li><a href="index"><i class="icon-home"></i>List a visiter</a></li>
-                    <li><a href="#"><i class="icon-comment"></i>Contribution<span class="badge badge-info">10</span></a>
+                    <li class="{{activeItem['listVisite']}}"><a ng-click="listVisite()"><i class="icon-home"></i>List a
+                        visiter</a></li>
+                    <li class="{{activeItem['contribution']}}"><a ng-click="contribution()"><i class="icon-comment"></i>Contribution</a>
                     </li>
-                    <li><a href="#"><i class="icon-user"></i>Personalisation</a></li>
+                    <li class="{{activeItem['personnalisation']}}"><a ng-click="personnalisation()"><i
+                            class="icon-user"></i>Personalisation</a>
+                    </li>
                     <li class="divider"></li>
-                    <li><a href="#"><i class="icon-comment"></i>Parametre</a></li>
-                    <li><a href="#"><i class="icon-share"></i>Logout</a></li>
+                    <li class="{{activeItem['parametre']}}"><a ng-click="parametre()"><i class="icon-comment"></i>Parametre</a>
+                    </li>
+                    <li><a><i class="icon-share"></i>Logout</a></li>
                 </ul>
             </div>
         </div>
     </div>
-    <div class="span9 well" ng-show="afficheList">
+    <div class="span9 well animated fadeIn" ng-show="afficheList">
+        <h2>Vos lieu favoris :</h2>
 
         <div id="clientsDb">
 
@@ -25,4 +30,68 @@
 
         </div>
     </div>
+
+    <div class="span9 well animated fadeIn" ng-show="afficheContribution">
+        <h2>Contribution</h2>
+
+        <div class="row-fluid">
+            <div class="span6">
+                <form>
+                    <div class="control-group">
+                        <label class="control-label">Latitude, Longitude :</label>
+
+                        <div class="controls">
+                            <input type="text" value="37.7699298, -122.4469157" name="txt_latlng"
+                                   id="txt_latlng" style="width:50%;">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">Nom :</label>
+
+                        <div class="controls">
+                            <input type="text" ng-model="nomContribution" placeholder="Nom du lieu" style="width: 50%">
+                            <img ng-show="nomContributionErreur" src="style/img/img%20icon/error.png" width="20px"
+                                 class="animated fadeIn">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">Categorie :</label>
+
+                        <div class="controls">
+                            <select ng-model="categorie" style="width: 70%;">
+                                <option>Cafe</option>
+                                <option>Restaurent</option>
+                                <option>Hotel</option>
+                                <option>Mosque</option>
+                                <option>Divertissement</option>
+                                <option>Transport</option>
+                                <option>Mosque</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+
+
+            </div>
+            <div class="span6">
+                <div id="map_contribution" class="map_contribution"
+                     style="width:100%;height:400px;border:solid black 1px;">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
 </div>
+<style>
+    .map_contribution {
+        margin-left: 2%;
+        margin-right: 0%;
+        width: 98%;
+        height: 550px;
+    }
+
+    .map_contribution img {
+        max-width: none !important;
+    }
+</style>
