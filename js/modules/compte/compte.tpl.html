@@ -1,15 +1,15 @@
 <div class="row-fluid" data-ng-controller="compteController" data-ng-init="init()"
      style="margin-top:20px;">
 
-    <div class="span2 well" style="margin-left: 5px;">
+    <div class="span2 well" style="margin-left: 5px;height: 300px;width: 17%">
         <div class="sidebar-nav">
-            <div style="width:180px; padding: 8px 0;">
+            <div>
                 <ul class="nav nav-list">
                     <li class="nav-header">Mon Compte</li>
                     <li><a href="index"><i class="icon-home"></i>List a visiter</a></li>
                     <li><a href="#"><i class="icon-comment"></i>Contribution<span class="badge badge-info">10</span></a>
                     </li>
-                    <li class="active"><a href="#"><i class="icon-user"></i>Personalisation</a></li>
+                    <li><a href="#"><i class="icon-user"></i>Personalisation</a></li>
                     <li class="divider"></li>
                     <li><a href="#"><i class="icon-comment"></i>Parametre</a></li>
                     <li><a href="#"><i class="icon-share"></i>Logout</a></li>
@@ -17,8 +17,12 @@
             </div>
         </div>
     </div>
-    <div class="span9 well">
-        {{birthday}}
-        <input kendo-date-picker ng-model="birthday" k-format="MM/dd/yyyy" />
+    <div class="span9 well" ng-show="afficheList">
+
+        <div id="clientsDb">
+
+            <div id="grid" style="height: 380px"></div>
+
+        </div>
     </div>
 </div>
