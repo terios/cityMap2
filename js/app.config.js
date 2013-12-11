@@ -61,6 +61,14 @@ myMapModule.config(function ($stateProvider, $urlRouterProvider) {
         .state('list', {
             url: '/list',
             views: {
+                "navbar": {templateUrl: function () {
+                    var key = localStorage.getItem("login");
+                    //console.debug("-----> " + key);
+                    if (key == "logged") {
+                        return 'js/modules/navbarfooter/navbarConnecter.tpl.html';
+                    }
+                    return 'js/modules/navbarfooter/navbarDisconnecter.html';
+                }},
                 "content": {
                     templateUrl: "js/modules/list/list.tpl.html"
                 }

@@ -29,6 +29,12 @@ myMapModule.factory('triecategorie', function () {
     return triecategorie;
 });
 
+myMapModule.factory('search', function () {
+    var search = [];
+    search['key'] = "";
+    return search;
+});
+
 
 myMapModule.factory('maptype', function () {
 

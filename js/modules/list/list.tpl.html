@@ -1,119 +1,111 @@
-²<div class="page-container" ng-controller="listController">
-    <div id="main" class="container">
-        <!-- start of page content -->
-        <div class="span8 main-listing">
+<script>
 
-        <div ng-repeat="article in articles">
-            <article class="type-post hentry clearfix">
+    /*    $(window).load(function(){
+     $("#sticker").sticky({ topSpacing: 0 });
+     });
 
-                <header class="clearfix">
+    $(window).load(function(){
+     var H = $("#content").height();
+     $('#sticker').height(H);
+     });
 
-                    <h3 class="post-title coffee">
-                        <a href="single.html">{{article.title}}</a>
-                    </h3>
+     $(window).resize(function(){
+     var H = $("#content").height();
+     $('#sticker').height(H);
+     });
+*/
+</script>
 
-                    <!-- end of post meta -->
+<div class="container-fluid" ng-controller="listController">
 
-                </header>
-                <div style="float:left; margin-right:10px;">
-                    <a class="th radius">
-                        <img ng-src="style/img/{{article.image}}" style="width: 30px;margin-bottom:5px;"><br/>
-                        <span class="success label" style="width:100%;">{{article.rate}}/10</span>
-                    </a>
-
+    <div class="row-fluid" data-ng-controller="listController" data-ng-init="init()">
+        <div id="sidebar" class="span3">
+            <div class="sticky-wrapper" id="sticker-sticky-wrapper">
+                <div id="sticker">
+                    <div id="form">
+                        <form id="form2" class="search-form">
+                            <input ng-model="tags.category.hotel" name="checkboxG1" id="checkboxG1" class="css-checkbox" type="checkbox"><label
+                                for="checkboxG1" class="css-label">Hôtels</label><br/>
+                            <input ng-model="tags.category.cafe" name="checkboxG2" id="checkboxG2" class="css-checkbox" type="checkbox"><label
+                                for="checkboxG2" class="css-label">Cafés</label><br/>
+                            <input ng-model="tags.category.restaurant" name="checkboxG3" id="checkboxG3" class="css-checkbox" type="checkbox"><label
+                                for="checkboxG3" class="css-label">Restaurants</label><br/>
+                            <input ng-model="tags.category.divers" name="checkboxG3" id="checkboxG4" class="css-checkbox" type="checkbox"><label
+                                for="checkboxG4" class="css-label">Divertissement</label><br/>
+                            <input ng-model="tags.category.transport" name="checkboxG3" id="checkboxG5" class="css-checkbox" type="checkbox"><label
+                                for="checkboxG5" class="css-label">Voyages & Transport</label><br/>
+                            <input ng-model="tags.category.shop" name="checkboxG3" id="checkboxG6" class="css-checkbox" type="checkbox"><label
+                                for="checkboxG6" class="css-label">Shopping & Services</label><br/>
+                            <input ng-model="tags.category.relig" name="checkboxG3" id="checkboxG7" class="css-checkbox" type="checkbox"><label
+                                for="checkboxG7" class="css-label">Lieux Religieux</label><br/>
+                            <input ng-model="tags.category.sante" name="checkboxG3" id="checkboxG8" class="css-checkbox" type="checkbox"><label
+                                for="checkboxG8" class="css-label">Santé</label><br/><br/>
+                            <input ng-model="tags.tags" type="text" placeholder="Keywords ..."/><br/>
+                            <select>
+                                <option ng-model="tags.city" value="">Toutes les Villes</option>
+                                <option ng-model="tags.city">Rabat</option>
+                                <option ng-model="tags.city">Casa</option>
+                                <option ng-model="tags.city">Al Hoceima</option>
+                            </select>
+                            <br/><br/>
+                            <input class="search-btn" value="Search" type="submit" ng-click="search();">
+                        </form>
+                    </div>
                 </div>
-                <p style="height:100px;">{{article.desc}}<a
-                            class="readmore-link"
-                            href="http://knowledgebase.inspirythemes.com/integrating-wordpress-with-your-website/">Read
-                        more</a>
-                </p>
-                <div class="post-meta">
-                    <span class="location">{{article.city}}</span>
-                    <span class="category"><a href="#">{{article.category}}</a></span>
-                    <span class="comments"><a href="#">{{article.comments-count}} Comments</a></span>
-                    <span class="like-count">{{like-counts}}</span>
+            </div>
+        </div>
+        <div id="content" class="span6">
+            <div style="text-align: right;"> <span class="badge" >{{total}} Lieux Trouvés</span></div>
+            <div class="container carbonad" ng-repeat="article in articles">
+                <div class="container-fluid">
+                    <div class="row-fluid" >
+                        <div class="span4">
+                            <a href="{{article.link}}"><img ng-src="{{article.picture}}" alt="" class="img-rounded"/></a>
+                        </div>
+                        <div class="span5">
+                            <h4>{{article.title}}</h4>
+                                <i class="icon-map-marker"></i><cite> {{article.address}}</cite><br/>
+                                <i class="icon-tag"></i> {{article.category}}<br/>
+                                <i class="icon-calendar"></i> {{article.date}}<br/><br/>
+
+                            <!-- Split button -->
+                        <a type="button" class="btn btn-info" href="{{article.link}}">Read More ...</a>
+                        </div>
+                        <div class="span3" id="rating">
+                            <h1 class="rating-num">
+                                {{article.rate}}</h1>
+                            <div class="rating">
+                                <span data-ng-repeat="i in [1,2,3,4,5]" ng-class="{true:'icon-star', false:'icon-star-empty'}[i<=article.rateInt]"></span>
+
+                            </div>
+                            <br/>
+                            <div>
+                                <span class="icon-user"></span>{{article.usersCount}} total
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-
-            </article><br/>
-        </div>
-
-            <br/>
-            <ul class="pagination">
-                <li class="arrow unavailable"><a href="">&laquo;</a></li>
-                <li class="current"><a href="">1</a></li>
-                <li><a href="">2</a></li>
-                <li><a href="">3</a></li>
-                <li><a href="">4</a></li>
-                <li class="unavailable"><a href="">&hellip;</a></li>
-                <li><a href="">12</a></li>
-                <li><a href="">13</a></li>
-                <li class="arrow"><a href="">&raquo;</a></li>
-            </ul>
-
-        </div>
-        <!-- end of page content -->
-
-
-        <!-- start of sidebar -->
-        <aside class="span4">
-            <div class="sidebar">
-
-                <form class="custom">
-                    <fieldset>
-                        <legend>Recherche</legend>
-                        <div class="row">
-                            <div class="large-10 columns">
-                                <label for="checkbox1"><input type="checkbox" id="checkbox1"
-                                                              style="display: none;"><span class="custom checkbox"
-                                                                                           style="margin-right:5px;"></span>Cafés</label>
-                                <label for="checkbox1"><input type="checkbox" id="checkbox2"
-                                                              style="display: none;"><span class="custom checkbox"
-                                                                                           style="margin-right:5px;"></span>Restaurants</label>
-                                <label for="checkbox1"><input type="checkbox" id="checkbox3"
-                                                              style="display: none;"><span class="custom checkbox"
-                                                                                           style="margin-right:5px;"></span>Hotels</label>
-                            </div>
-                        </div>
-                        <br/>
-                        <input type="text" placeholder="Keywords ..." class="large-10 columns">
-
-                        <div class="row collapse">
-                            <div class="large-5 small-5 columns">
-                                <span class="prefix">Rating</span>
-                            </div>
-                            <div class="large-7 small-7 columns" align="center">
-                                <select>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="row collapse">
-                            <div class="large-5 small-5 columns">
-                                <span class="prefix">City</span>
-                            </div>
-                            <div class="large-7 small-7 columns" align="center">
-                                <select>
-                                    <option>Casablanca</option>
-                                    <option>Oujda</option>
-                                    <option>Rabat</option>
-                                </select>
-                            </div>
-                        </div>
-                        <input type="submit" class="button postfix" value="Search"/>
-                    </fieldset>
-                </form>
 
             </div>
-        </aside>
 
-        <!-- end of sidebar -->
+            <div class="pagination pagination-small" style="text-align: center;">
+                <ul>
 
+                    <li ng-class="{active: hasprev==false}"><a href="#/list" ng-click="gotoPage(currentPage-1)">Prev</a></li>
+                    <li ng-repeat="p in pagesCount" ng-class="{active: p==currentPage}"><a href="#/list" ng-click="gotoPage(p);">{{p}}</a></li>
+                    <li ng-class="{active: hasnext==false}"><a href="#/list" ng-click="gotoPage(currentPage+1)">Next</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="span3">
+            <section class="widget">
+                <div class="support-widget">
+                    <h3 class="title">Support</h3>
+
+                    <p class="intro">Need more support? If you did not found an answer, contact us for further help.</p>
+                </div>
+            </section>
+        </div>
     </div>
 </div>
-<!-- End of Page Container -->
-
