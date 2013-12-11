@@ -41,8 +41,8 @@
                         <label class="control-label">Latitude, Longitude :</label>
 
                         <div class="controls">
-                            <input type="text" value="37.7699298, -122.4469157" name="txt_latlng"
-                                   id="txt_latlng" style="width:50%;">
+                            <input type="text" ng-model="lat" id="lat" style="width:25%;">
+                            <input type="text" ng-model="lon" id="lon" style="width:25%;">
                         </div>
                     </div>
                     <div class="control-group">
@@ -58,7 +58,7 @@
                         <label class="control-label">Categorie :</label>
 
                         <div class="controls">
-                            <select ng-model="categorie" style="width: 70%;">
+                            <select ng-model="categorie" style="width: 53%;">
                                 <option>Cafe</option>
                                 <option>Restaurent</option>
                                 <option>Hotel</option>
@@ -67,6 +67,16 @@
                                 <option>Transport</option>
                                 <option>Mosque</option>
                             </select>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">Desripction :</label>
+
+                        <div class="controls">
+                            <textarea type="text" ng-model="nomContribution" placeholder="description du lieu"
+                                      style="width: 50%"/>
+                            <img ng-show="nomContributionErreur" src="style/img/img%20icon/error.png" width="20px"
+                                 class="animated fadeIn">
                         </div>
                     </div>
                 </form>
