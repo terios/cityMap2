@@ -12,6 +12,7 @@ myMapModule.controller('principalController', function ($rootScope, $scope, loca
     $rootScope.maptype;
     $rootScope.markerlist = [];
 
+
     /**
      * une fois la page principal ouverte execution de la function init()
      */

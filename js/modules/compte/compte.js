@@ -19,7 +19,6 @@ myMapModule.controller('compteController', function ($scope, localisation) {
             {'nom': 'anas', 'ville': 'anas', 'categorie': 'oujda', 'id': 12},
             {'nom': 'oko', 'ville': 'uu', 'categorie': 'casablanca', 'id': 13}
         ]
-
         $scope.init = function () {
             $("#grid").kendoGrid({
                 dataSource: {
