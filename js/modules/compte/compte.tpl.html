@@ -29,6 +29,16 @@
             <div id="grid" style="height: 380px"></div>
 
         </div>
+        <div id="details"></div>
+
+        <script type="text/x-kendo-template" id="template">
+            <div id="details-container">
+                <h4>#= nom #</h4>
+                <h6>etes vous sur de vouloir suprimme ce lieu</h6>
+                <button class="delete-confirm k-button">Valider</button>
+                <button class="delete-cancel">Annule</button>
+            </div>
+        </script>
     </div>
 
     <div class="span9 well animated fadeIn" ng-show="afficheContribution">
@@ -54,7 +64,7 @@
                                  class="animated fadeIn">
                         </div>
                     </div>
-                    
+
                     <div class="control-group">
                         <label class="control-label">Categorie :</label>
 
@@ -121,7 +131,9 @@
 
     </div>
 
-    <div class="span9 well animated fa" ng-controller="affichePersonalisation"></div>
+    <div class="span9 well animated fadeIn" ng-show="affichePersonalisation">
+        <img src="style/img/img%20icon/under-construction.png" width="100%">
+    </div>
 </div>
 <style>
     .map_contribution {

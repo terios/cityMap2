@@ -136,7 +136,11 @@ myMapModule.controller('compteController', function ($scope, localisation) {
             for (tmp in $scope.activeItem) {
                 $scope.activeItem[tmp] = "";
             }
+            $scope.afficheContribution = false;
+            $scope.afficheList = false;
+            $scope.affichePersonalisation = true;
             $scope.activeItem["personnalisation"] = "active";
+
         }
         $scope.contribution = function () {
             for (tmp in $scope.activeItem) {
@@ -145,6 +149,7 @@ myMapModule.controller('compteController', function ($scope, localisation) {
             $scope.activeItem["contribution"] = "active";
             $scope.afficheContribution = true;
             $scope.afficheList = false;
+            $scope.affichePersonalisation = false;
             tmp = getlocation();
 
         }
@@ -153,7 +158,7 @@ myMapModule.controller('compteController', function ($scope, localisation) {
                 $scope.activeItem[tmp] = "";
             }
             $scope.activeItem["listVisite"] = "active";
-
+            $scope.affichePersonalisation = false;
             $scope.afficheContribution = false;
             $scope.afficheList = true;
         }

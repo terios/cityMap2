@@ -41,7 +41,7 @@ myMapModule.controller('sideprincipalController', function ($rootScope, $scope, 
          });
 
          */
-        alert('send');
+        console.debug(data);
     }
     function actualise() {
         console.debug('actualisation des donnes du map');

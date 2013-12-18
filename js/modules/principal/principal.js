@@ -11,7 +11,7 @@ myMapModule.controller('principalController', function ($rootScope, $scope, loca
     $scope.sideMapStyle = "paper"
     $rootScope.maptype;
     $rootScope.markerlist = [];
-
+    $rootScope.afficheRechDetail;
 
     /**
      * une fois la page principal ouverte execution de la function init()
@@ -94,8 +94,28 @@ myMapModule.controller('principalController', function ($rootScope, $scope, loca
         ;
 
         localisation['map'] = $rootScope.map;
-        var tmp = ajoutPing();
-        $("spinner-wrapper").remove();
+
+
+        data = {
+            lat: position.coords.latitude, lon: position.coords.longitude, city: '', limit: false
+        }
+
+        $.ajax({ // fonction permettant de faire de l'ajax
+            type: "POST", // methode de transmission des données au fichier php
+            url: "http://192.168.68.109:8000/api/v1/article/search/", // url du fichier php
+            dataType: 'json',
+            data: data,
+            success: function (data) { // si l'appel a bien fonctionnés
+
+                console.debug(data);
+                var tmp = ajoutPing(data);
+                $("spinner-wrapper").remove();
+                $scope.$apply();
+            },
+            error: function () {
+                alert('erreur rencontrer');
+            }
+        });
     }
 
     /* //listner sur latitude
@@ -121,32 +141,35 @@ myMapModule.controller('principalController', function ($rootScope, $scope, loca
      */
     function ajoutPing(json) {
         localisation['mapcenter'] = localisation['map'].getCenter();
-        var locations = [
-            ['Bondi Beach', localisation['mapcenter'].pb, localisation['mapcenter'].qb, 4, "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard ", "coffe", 'style/img/img%20icon/Map-Marker-coffe.png'],
-            ['Coogee Beach', 35.178247, -3.868779, 5, "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard ", "hotel", 'style/img/img%20icon/hotel_marker.png'],
-            ['Cronulla Beach', 35.178227, -3.869879, 3, "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard ", "restaurent", 'style/img/img%20icon/restaurent_marker.png'],
-            ['Manly Beach', 35.178147, -3.862879, 2, "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard ", "gare", 'style/img/img%20icon/Map-Marker-gare.png'],
-            ['Maroubra Beach', 35.148247, -3.868879, 6, "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard ", "club", 'style/img/img%20icon/Map-Marker-club.png'],
-            ['Maroubra Beach', 35.158247, -3.868879, 6, "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard ", "shop", 'style/img/img%20icon/shop_marker.png'],
-            ['Maroubra Beach', 35.158247, -3.858879, 6, "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard ", "hopital", 'style/img/img%20icon/hopital_marker.png'],
-            ['Maroubra Beach', 35.158247, -3.861879, 1, "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard ", "mosque", 'style/img/img%20icon/Map-Marker-mosque.png']
+        i = 0;
 
-        ];
+        /*
+         marker[0] = json['objects'][counter]['id'];
+         marker[1] = json['objects'][counter]['name'];
+         marker[2] = json['objects'][counter]['category'];
+         marker[3] = json['objects'][counter]['city'];
+         marker[4] = json['objects'][counter]['rating'];
+         marker[5] = json['objects'][counter]['latitude'];
+         marker[3] = json['objects'][counter]['longitude'];
+         marker[3] = json['objects'][counter]['vote_count'];
+         locations.push();
+         ['Bondi Beach', localisation['mapcenter'].pb, localisation['mapcenter'].qb, 4, "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard ", "coffe", 'style/img/img%20icon/Map-Marker-coffe.png'],
+
+         */
         var infowindow = new google.maps.InfoWindow();
-        for (var i = 0; i < locations.length; i++) {
-
+        for (tmp in json['objects']) {
             marker = new google.maps.Marker({
-                position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                position: new google.maps.LatLng(json['objects'][i]['latitude'], json['objects'][i]['longitude']),
                 map: localisation['map'],
                 draggable: false,
                 animation: google.maps.Animation.DROP,
-                icon: locations[i][6],
-                category: locations[i][5]
+                icon: 'style/img/img%20icon/Map-Marker-coffe.png',
+                category: "hotel"
             });
 
             google.maps.event.addListener(marker, 'click', (function (marker, i) {
                 return function () {
-                    infowindow.setContent('<div class="span4 animated fadeIn">' +
+                    infowindow.setContent('<div class="span4 animated fadeIn" style="background-color: darkgray">' +
                         '<div class="row">' +
                         '<div class="span4">' +
                         '<div class="row">' +
@@ -155,12 +178,13 @@ myMapModule.controller('principalController', function ($rootScope, $scope, loca
                         '<img src="style/img/img%20icon/hotel_bg_32.png" alt=""></a>' +
                         '</div>' +
                         '<div class="span3">' +
-                        '<h4>Titre</h4>' +
+                        '<h4>' + json['objects'][i]['name'] + '</h4>' +
                         '<p>' +
-                        '<strong>' + locations[i][4] + '</strong>' +
+                        '<strong>' + json['objects'][i]['category'] + '</strong>' +
                         '</p>' +
                         '<div class="row-fluid">' +
-                        '<span class=" badge badge-info">15 j aime</span>' +
+                        '<span class=" badge badge-info">vote :' + json['objects'][i]['votes_count'] + '</span>' +
+                        '<span class=" badge badge-inverse">note :' + json['objects'][i]['rating'] + '</span>' +
                         '<span class="badge badge-success" style="margin-left: 10px;"><a href="#" style="color: #ffffff;">plus de detaille</a></span>' +
                         '</div>' +
                         '</div>' +
@@ -176,6 +200,7 @@ myMapModule.controller('principalController', function ($rootScope, $scope, loca
                 }
             })(marker, i));
             $rootScope.markerlist.push(marker);
+            i++;
         }
     }
 
@@ -251,23 +276,16 @@ myMapModule.controller('principalController', function ($rootScope, $scope, loca
 
         localisation['mapcenter'] = localisation['map'].getCenter();
         //   console.debug('latitude :' + localisation['mapcenter'].pb + '  longitude : ' + localisation['mapcenter'].qb);
-        $scope.latitude = localisation['mapcenter'].pb;
-        $scope.longitude = localisation['mapcenter'].qb;
-
-        var tmp = refresheMap($scope);
-    }
+        $scope.latitude = localisation['mapcenter'].nb;
+        $scope.longitude = localisation['mapcenter'].ob;
 
 
-    function refresheMap(position) {
-
-        var latitude = position.latitude;
-        var longitude = position.longitude;
-        latlon = new google.maps.LatLng(latitude, longitude);
+        latlon = new google.maps.LatLng($scope.latitude, $scope.longitude);
         mapholder = document.getElementById('map');
         $rootScope.maptype = maptype['mystyle'];
         var mapOptions = {
             center: latlon,
-            zoom: 10,
+            zoom: 14,
             mapTypeControl: true,
             styles: maptype[$rootScope.maptype],
             mapTypeControlOptions: {
@@ -282,10 +300,27 @@ myMapModule.controller('principalController', function ($rootScope, $scope, loca
         };
         $rootScope.map = new google.maps.Map(document.getElementById("map"), mapOptions);
         localisation['map'] = $rootScope.map;
-        var tmp = ajoutPing();
-        //$("spinner-wrapper").remove();
 
-        //console.debug($rootScope.markerlist[0].category);
+
+        data = {
+            lat: $scope.latitude, lon: $scope.longitude, city: '', limit: false
+        }
+
+        $.ajax({ // fonction permettant de faire de l'ajax
+            type: "POST", // methode de transmission des données au fichier php
+            url: "http://192.168.68.109:8000/api/v1/article/search/", // url du fichier php
+            dataType: 'json',
+            data: data,
+            success: function (data) { // si l'appel a bien fonctionnés
+
+                var tmp = ajoutPing(data);
+                $("spinner-wrapper").remove();
+                $scope.$apply();
+            },
+            error: function () {
+                alert('erreur rencontrer');
+            }
+        });
 
 
     }

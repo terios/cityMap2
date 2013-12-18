@@ -6,8 +6,17 @@
  */
 myMapModule.controller('navDisconnecterController', function ($scope, $location) {
 
+    $scope.afficheRechDetail = false;
+
     $scope.openAuth = function () {
         $location.path("/auth");
     }
+
+
+    $scope.submitRechercheDetailler = function () {
+        $scope.afficheRechDetail = false;
+    }
+
+
 })
 ;

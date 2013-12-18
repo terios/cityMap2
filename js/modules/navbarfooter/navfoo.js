@@ -3,6 +3,8 @@
  */
 myMapModule.controller('navfooController', function ($rootScope, $scope, $location, localisation, maptype) {
 
+    $rootScope.afficheRechDetail = false;
+
 
     $scope.submitRechercheDetailler = function () {/*
      localisation['motcle'] = $scope.recherchDetailler
@@ -11,10 +13,12 @@ myMapModule.controller('navfooController', function ($rootScope, $scope, $locati
         /*$location.path("/list");
          $scope.$apply();*/
 
-        console.debug('factory' + maptype['mystyle']);
-        console.debug('rootscope' + $rootScope.maptype);
-
+        /*        console.debug('factory' + maptype['mystyle']);
+         console.debug('rootscope' + $rootScope.maptype);
+         */
+        $rootScope.afficheRechDetail = !$rootScope.afficheRechDetail;
     }
+
 
 })
 ;
