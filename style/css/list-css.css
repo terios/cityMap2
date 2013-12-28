@@ -1,0 +1,107 @@
+/*Checkbox*/
+
+input[type=checkbox].css-checkbox {
+		display:none;
+}
+
+input[type=checkbox].css-checkbox + label.css-label {
+							padding-left:22px;
+							height:15px; 
+							display:inline-block;
+							line-height:15px;
+							background-repeat:no-repeat;
+							background-position: 0 0;
+							font-size:15px;
+							vertical-align:middle;
+							cursor:pointer;
+
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+			background-position: 0 -17px;
+}
+label.css-label {
+				background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_980f31779d71af895bbe0be03c999c59.png);
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+				color:white;
+				font-family: times new roman;
+}
+
+
+/*Other Icons*/
+.hentry .post-meta .localize {
+  background: url("../img/img%20icon/location-icon.png") no-repeat left center;
+}
+
+a{
+	color:#3B3940;
+}
+a:hover{
+	color:#3E2685;
+}
+::-moz-selection {
+	background: #3E2685; /* Firefox */
+    color: #fff;
+}
+
+.carbonad {
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: rgb(245, 245, 245);
+    border: 1px solid rgb(227, 227, 227);
+    border-radius: 4px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05) inset;
+    width: 100%;
+}
+
+.carbonad2{
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgb(245, 245, 245);
+    border: 1px solid rgb(227, 227, 227);
+    border-top-left-radius: 4px;
+    width: 95%;
+}
+
+.carbonad3{
+    padding: 10px;
+    background-color: rgb(212, 212, 212);
+    border: 1px solid rgb(227, 227, 227);
+    border-bottom-left-radius: 4px;
+    width: 95%;
+}
+
+#rating{
+    text-align: center;
+    padding: 10px;
+}
+
+#content{
+    min-height: 500px;
+}
+
+#share{
+    padding-left: 10px;
+}
+
+#rate{
+    padding: 10px;
+    font-size: 17px;
+    margin-top: 70%;
+    margin-left: -70%;
+    min-width: 130%;
+    text-align: center;
+}
+
+#map_canvas{
+    width: 100%;
+    min-height: 226px;
+    margin-top: 10px;
+    margin-left: -10%;
+}

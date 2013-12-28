@@ -2,14 +2,76 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="810e8fcb-fd91-4614-be33-8059e5d0c931" name="Default" comment="webstorm">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/images/large/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/images/small/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/images/large/10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/images/small/10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/images/large/11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/images/small/11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/images/large/12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/images/small/12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/images/large/13.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/images/small/13.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/images/large/14.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/images/small/14.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/images/large/15.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/images/small/15.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/images/large/16.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/images/small/16.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/images/large/17.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/images/small/17.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/images/large/18.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/images/small/18.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/images/large/19.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/images/small/19.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/images/large/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/images/small/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/images/large/20.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/images/small/20.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/images/large/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/images/small/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/images/large/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/images/small/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/images/large/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/images/small/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/images/large/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/images/small/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/images/large/7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/images/small/7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/images/large/8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/images/small/8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/images/large/9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/images/small/9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/images/bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/images/black_denim.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/img/template/cafe.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/img/img icon/cafe.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/img/icons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/img/loader.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/images/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/images/loading_dark.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/img/img icon/main-bg-vertic.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/images/nav.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/images/social-icons-sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/images/social-icons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/bootstrap-select.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/bootstrap-select.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/modules/detail/detail.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/modules/detail/detail.tpl.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/elastislide.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/img/icons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/jquery.elastislide.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/jquery.share.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/jquery.share.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/jquery.swipebox.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/list-css.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/modernizr.custom.17475.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/spin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/css/swipebox.css" />
       <change type="DELETED" beforePath="C:\Users\Laraki\Desktop\cityMap2\PagePrincipal.html" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Laraki\Desktop\cityMap2\sbai.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.config.js" afterPath="$PROJECT_DIR$/js/app.config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/modules/list/list.tpl.html" afterPath="$PROJECT_DIR$/js/modules/list/list.tpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/modules/list/listControllers.js" afterPath="$PROJECT_DIR$/js/modules/list/listControllers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/modules/navbarfooter/navfoo.js" afterPath="$PROJECT_DIR$/js/modules/navbarfooter/navfoo.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cityMap.iws" />
@@ -45,7 +107,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="221" column="51" selection-start="9102" selection-end="9102" vertical-scroll-proportion="6.72093" vertical-offset="0" max-vertical-offset="3893">
+            <state line="16" column="13" selection-start="603" selection-end="603" vertical-scroll-proportion="0.48658317" vertical-offset="0" max-vertical-offset="3893">
               <folding />
             </state>
           </provider>
@@ -245,24 +307,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cityMap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cityMap2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -415,7 +459,11 @@
       <created>1386801557774</created>
       <updated>1386801557774</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="webstorm">
+      <created>1388255159536</created>
+      <updated>1388255159536</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -442,6 +490,7 @@
     <frame x="-4" y="-4" width="1374" height="732" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5401929" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -456,7 +505,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279743" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -565,7 +613,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="221" column="51" selection-start="9102" selection-end="9102" vertical-scroll-proportion="6.72093" vertical-offset="0" max-vertical-offset="3893">
+        <state line="16" column="13" selection-start="603" selection-end="603" vertical-scroll-proportion="0.48658317" vertical-offset="0" max-vertical-offset="3893">
           <folding />
         </state>
       </provider>

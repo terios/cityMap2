@@ -1,0 +1,124 @@
+<script>
+    $('.selectpicker').selectpicker();
+</script>
+
+<div ng-controller="detailController">
+        <div collapse="afficheRechDetail" id="collapse">
+            <div class="container-fluid search-container">
+                <div class="span2"></div>
+                <form class="span10 search-form">
+                    <input class="span2" type="text" placeholder="Keywords ..." ng-model="tags.tags"/>
+                    <select ng-model="tags.city" class="span2 selectpicker">
+                        <option class="opt-left" value="">Toutes les Villes</option>
+                        <option class="opt-left">Rabat</option>
+                        <option class="opt-left">Casablanca</option>
+                        <option class="opt-left">Al Hoceima</option>
+                    </select>
+
+                    <select ng-model="tags.category" class="span4 selectpicker" multiple title="Choisi une Categorie ..">
+                        <option class="opt-left" value="hotel">Hôtels</option>
+                        <option class="opt-left" value="cafe">Cafés</option>
+                        <option class="opt-left" value="restaurant">Restaurant</option>
+                    </select>
+                    <input class="span search-btn" value="Search" type="submit" ng-click="search();"/>
+                </form>
+                <div class="span2"/>
+            </div>
+        </div>
+        <div class="container-fluid" ng-init="init()" >
+            <div class="row-fluid">
+                <div id="share" class="span2"></div>
+                <div class="span8">
+                    <div class="container-fluid" id="place_card">
+                        <div class="row-fluid">
+                        <div class="span8" >
+                            <div class="container-fluid" >
+                            <div class="row-fluid carbonad2">
+                                <div class="span4">
+                                    <img ng-src="{{article.picture}}" class="img-rounded"/>
+                                </div>
+                                <div class="span6">
+                                <h4>{{article.title}}</h4>
+                                <i class="icon-map-marker"></i><cite> {{article.address}}</cite><br/>
+                                <i class="icon-tag"></i> {{article.category}}<br/>
+                                <i class="icon-calendar"></i> {{article.date}}<br/>
+                                </div>
+                                <div class="span2">
+                                    <span class="label label-success" id="rate">{{article.rate}}<sup>/5</sup></span>
+                                </div>
+                            </div>
+                            <div class="row-fluid carbonad3">
+                                <div class="container-fluid" style="padding-left: 0px;padding-right: 0px;">
+                                <div class="span6">
+                                <button class="btn btn-small" id="checkin"><i class="icon-list-alt"></i> Check-in</button>
+                                <button class="btn btn-info btn-small"><i class="icon-white icon-upload"></i> Upload Photos</button>
+                                </div>
+                                <div class="span6" style="text-align: right;padding-top: 5px;">
+                                    <span class="icon-user"/><i style="margin-right: 20px;"> {{article.usersCount}}</i>
+                                    <rating value="rate" max="5" readonly="false" on-hover="hoveringOver(value)" on-leave="overStar = null" ng-click="vote();"/>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="span4"><div id="map_canvas"></div>
+                        </div>
+                        </div><br/>
+                        <div class="row-fluid">
+                            <div class="container-fluid demo-1">
+                                <ul id="carousel" class="elastislide-list">
+                                    <li ng-repeat="img in images"><a rel="gallery" href="{{img.original}}" class="swipebox"><img src="{{img.resized}}" /></a></li>
+                                </ul>
+                            </div>
+                        </div><br/>
+                        <div class="row-fluid">
+                            <div class="container carbonad2">
+                            <div id="disqus_thread"></div>
+                            <script type="text/javascript">
+                                /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                                var disqus_shortname = 'citymar'; // required: replace example with your forum shortname
+
+                                /* * * DON'T EDIT BELOW THIS LINE * * */
+                                (function() {
+                                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                                })();
+                            </script>
+                            <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="span2"></div>
+            </div>
+        </div>
+
+</div>
+
+
+<script>
+    $('#share').share({
+        networks: ['facebook','twitter','googleplus'],
+        orientation: 'vertical',
+        urlToShare: 'http://www.in1.com'
+    });
+    $("#carousel").elastislide();
+    $(".swipebox").swipebox();
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+<script>
+    function initialize() {
+        var map_canvas = document.getElementById('map_canvas');
+        var map_options = {
+            center: new google.maps.LatLng(44.5403, -78.5463),
+            zoom: 8,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(map_canvas, map_options)
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+</script>
