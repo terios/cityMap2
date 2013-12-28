@@ -1,61 +1,37 @@
 <script>
-
-    /*    $(window).load(function(){
-     $("#sticker").sticky({ topSpacing: 0 });
-     });
-
-    $(window).load(function(){
-     var H = $("#content").height();
-     $('#sticker').height(H);
-     });
-
-     $(window).resize(function(){
-     var H = $("#content").height();
-     $('#sticker').height(H);
-     });
-*/
+    $('.selectpicker').selectpicker();
 </script>
 
-<div class="container-fluid" ng-controller="listController">
+<div ng-controller="listController">
+<div data-ng-controller="listController">
+<div collapse="afficheRechDetail" id="collapse">
+    <div class="container-fluid search-container">
+        <div class="span2"></div>
+        <form class="span10 search-form">
+            <input class="span2" type="text" placeholder="Keywords ..." ng-model="tags.tags"/>
+            <select ng-model="tags.city" class="span2 selectpicker">
+                <option class="opt-left" value="">Toutes les Villes</option>
+                <option class="opt-left">Rabat</option>
+                <option class="opt-left">Casablanca</option>
+                <option class="opt-left">Al Hoceima</option>
+            </select>
 
-    <div class="row-fluid" data-ng-controller="listController" data-ng-init="init()">
-        <div id="sidebar" class="span3">
-            <div class="sticky-wrapper" id="sticker-sticky-wrapper">
-                <div id="sticker">
-                    <div id="form">
-                        <form id="form2" class="search-form">
-                            <input ng-model="tags.category.hotel" name="checkboxG1" id="checkboxG1" class="css-checkbox" type="checkbox"><label
-                                for="checkboxG1" class="css-label">Hôtels</label><br/>
-                            <input ng-model="tags.category.cafe" name="checkboxG2" id="checkboxG2" class="css-checkbox" type="checkbox"><label
-                                for="checkboxG2" class="css-label">Cafés</label><br/>
-                            <input ng-model="tags.category.restaurant" name="checkboxG3" id="checkboxG3" class="css-checkbox" type="checkbox"><label
-                                for="checkboxG3" class="css-label">Restaurants</label><br/>
-                            <input ng-model="tags.category.divers" name="checkboxG3" id="checkboxG4" class="css-checkbox" type="checkbox"><label
-                                for="checkboxG4" class="css-label">Divertissement</label><br/>
-                            <input ng-model="tags.category.transport" name="checkboxG3" id="checkboxG5" class="css-checkbox" type="checkbox"><label
-                                for="checkboxG5" class="css-label">Voyages & Transport</label><br/>
-                            <input ng-model="tags.category.shop" name="checkboxG3" id="checkboxG6" class="css-checkbox" type="checkbox"><label
-                                for="checkboxG6" class="css-label">Shopping & Services</label><br/>
-                            <input ng-model="tags.category.relig" name="checkboxG3" id="checkboxG7" class="css-checkbox" type="checkbox"><label
-                                for="checkboxG7" class="css-label">Lieux Religieux</label><br/>
-                            <input ng-model="tags.category.sante" name="checkboxG3" id="checkboxG8" class="css-checkbox" type="checkbox"><label
-                                for="checkboxG8" class="css-label">Santé</label><br/><br/>
-                            <input ng-model="tags.tags" type="text" placeholder="Keywords ..."/><br/>
-                            <select>
-                                <option ng-model="tags.city" value="">Toutes les Villes</option>
-                                <option ng-model="tags.city">Rabat</option>
-                                <option ng-model="tags.city">Casa</option>
-                                <option ng-model="tags.city">Al Hoceima</option>
-                            </select>
-                            <br/><br/>
-                            <input class="search-btn" value="Search" type="submit" ng-click="search();">
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+            <select ng-model="tags.category" class="span4 selectpicker" multiple title="Choisi une Categorie ..">
+                <option class="opt-left" value="hotel">Hôtels</option>
+                <option class="opt-left" value="cafe">Cafés</option>
+                <option class="opt-left" value="restaurant">Restaurant</option>
+            </select>
+            <input class="span search-btn" value="Search" type="submit" ng-click="search();"/>
+        </form>
+        <div class="span2"/>
+    </div>
+</div>
+<div  class="container-fluid">
+    <div class="row-fluid">
+        <div  class="span3"></div>
         <div id="content" class="span6">
-            <div style="text-align: right;"> <span class="badge" >{{total}} Lieux Trouvés</span></div>
+            <br/><div style="text-align: right;"> <span class="badge" >{{total}} Lieux Trouvés</span></div>
+            <div id="maincontent" data-ng-init="init()">
             <div class="container carbonad" ng-repeat="article in articles">
                 <div class="container-fluid">
                     <div class="row-fluid" >
@@ -66,10 +42,10 @@
                             <h4>{{article.title}}</h4>
                                 <i class="icon-map-marker"></i><cite> {{article.address}}</cite><br/>
                                 <i class="icon-tag"></i> {{article.category}}<br/>
-                                <i class="icon-calendar"></i> {{article.date}}<br/><br/>
+                                <i class="icon-calendar"></i> {{article.date}}<br/>
 
                             <!-- Split button -->
-                        <a type="button" class="btn btn-info" href="{{article.link}}">Read More ...</a>
+                        <a type="button" class="btn btn-info" href="{{article.link}}" style="margin-top: 5px;">Read More ...</a>
                         </div>
                         <div class="span3" id="rating">
                             <h1 class="rating-num">
@@ -80,7 +56,7 @@
                             </div>
                             <br/>
                             <div>
-                                <span class="icon-user"></span>{{article.usersCount}} total
+                                <span class="icon-user"></span>  {{article.usersCount}}
                             </div>
                         </div>
                     </div>
@@ -96,16 +72,10 @@
                     <li ng-class="{active: hasnext==false}"><a href="#/list" ng-click="gotoPage(currentPage+1)">Next</a></li>
                 </ul>
             </div>
-
+            </div>
         </div>
-        <div class="span3">
-            <section class="widget">
-                <div class="support-widget">
-                    <h3 class="title">Support</h3>
-
-                    <p class="intro">Need more support? If you did not found an answer, contact us for further help.</p>
-                </div>
-            </section>
-        </div>
+        <div class="span3"></div>
     </div>
+    </div>
+</div>
 </div>

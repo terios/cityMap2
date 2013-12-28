@@ -33,8 +33,7 @@ myMapModule.factory('triecategorie', function () {
 });
 
 myMapModule.factory('search', function () {
-    var search = [];
-    search['key'] = "";
+    var search = {};
     return search;
 });
 

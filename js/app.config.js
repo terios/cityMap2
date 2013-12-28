@@ -74,6 +74,22 @@ myMapModule.config(function ($stateProvider, $urlRouterProvider, RestangularProv
                 }
             }
         })
+        .state('detail', {
+            url: '/detail/:articleId',
+            views: {
+                "navbar": {templateUrl: function () {
+                    var key = localStorage.getItem("login");
+                    //console.debug("-----> " + key);
+                    if (key == "logged") {
+                        return 'js/modules/navbarfooter/navbarConnecter.tpl.html';
+                    }
+                    return 'js/modules/navbarfooter/navbarDisconnecter.html';
+                }},
+                "content": {
+                    templateUrl: "js/modules/detail/detail.tpl.html"
+                }
+            }
+        })
         .state('list.item', {
             url: '/item',
             views: {
