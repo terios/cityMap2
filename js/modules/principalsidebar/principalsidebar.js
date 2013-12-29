@@ -23,24 +23,27 @@ myMapModule.controller('sideprincipalController', function ($rootScope, $scope, 
         $rootScope.maptype = $scope.sideMapStyle;
     }
     $scope.sideForm = function () {
-        var data = {'city': $scope.sideVille, 'category': {'cafe': $scope.checkModel.cafe, 'resto': $scope.checkModel.resto, 'hotel': $scope.checkModel.hotel, 'club': $scope.checkModel.club, 'mosque': $scope.checkModel.mosque, 'transport': $scope.checkModel.transport}, 'lat': localisation['lat'], 'lon': localisation['lon'], 'tags': $scope.sideMotCle};
+        localisation['mapcenter'] = localisation['map'].getCenter();
+        localisation['lat'] = localisation['mapcenter'].nb;
+        localisation['lon'] = localisation['mapcenter'].ob;
 
-        /*
-         $.ajax({ // fonction permettant de faire de l'ajax
-         type: "GET", // methode de transmission des données au fichier php
-         url: "http://192.168.68.102:8080/api/v1/article/search/", // url du fichier php
-         data: data,
-         dataType: 'json',
-         success: function (data) { // si l'appel a bien fonctionnés
+        var data = {'city': $scope.sideVille, 'category': {'cafe': $scope.checkModel.cafe, 'resto': $scope.checkModel.resto, 'hotel': $scope.checkModel.hotel, 'club': $scope.checkModel.club, 'mosque': $scope.checkModel.mosque, 'transport': $scope.checkModel.transport}, 'lat': localisation['lat'], 'lon': localisation['lon'], 'tags': $scope.sideMotCle, 'rayon': $scope.sideRayon};
 
-         alert('sucess');
-         },
-         error: function () {
-         alert('erreur rencontrer');
-         }
-         });
 
-         */
+        $.ajax({ // fonction permettant de faire de l'ajax
+            type: "POST", // methode de transmission des données au fichier php
+            url: "http://192.168.68.109:8000/api/v1/article/search/", // url du fichier php
+            data: data,
+            dataType: 'json',
+            success: function (data) { // si l'appel a bien fonctionnés
+                console.debug(data);
+            },
+            error: function () {
+                alert('erreur rencontrer');
+            }
+        });
+
+
         console.debug(data);
     }
     function actualise() {

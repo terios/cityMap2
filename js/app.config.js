@@ -117,14 +117,7 @@ myMapModule.config(function ($stateProvider, $urlRouterProvider, RestangularProv
                 templateUrl: "js/modules/principal/principal.tpl.html"
 
             }
-        }})
-    ;
-    $urlRouterProvider.otherwise('/otherwise');
-
-
-    RestangularProvider.setBaseUrl('http://192.168.68.54/Symfony/web/app_dev.php/users/1?jsoncallback=user');
-
-
+        }});
 });
 
 

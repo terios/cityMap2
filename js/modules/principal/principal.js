@@ -94,28 +94,104 @@ myMapModule.controller('principalController', function ($rootScope, $scope, loca
         ;
 
         localisation['map'] = $rootScope.map;
+        /**
+         * just pour test
+         * @type {*}
+         */
+        localisation['mapcenter'] = localisation['map'].getCenter();
+        $scope.latitude = localisation['mapcenter'].nb;
+        $scope.longitude = localisation['mapcenter'].ob;
+        $rootScope.donneMarker = [
+            {nom: 'nom1', description: 'description1'},
+            {nom: 'nom2', description: 'description2'}
+        ]
+        for (var i = 0; i < 2; i++) {
+            if (i > 0) {
+                $scope.latitude = 34.677829069312956;
+                $scope.longitude = -1.9403254240751266;
+            }
+            marker = new google.maps.Marker({
+                position: new google.maps.LatLng($scope.latitude, $scope.longitude),
+                map: localisation['map'],
+                draggable: false,
+                animation: google.maps.Animation.DROP,
+                icon: 'style/img/img%20icon/hopital_marker.png',
+                category: "hotel"
+            });
+            $rootScope.markerlist.push(marker);
+
+            var boxText = document.createElement("div");
+            boxText.innerHTML = '<div class="animated fadeIn">' +
+                                    '<div class="span3" style="border: 2px solid #0480be; margin-top: 0px; background:#333; color:#FFF; font-family:Arial; font-size:12px; border-radius:6px; -webkit-border-radius:6px; -moz-border-radius:6px;">' +
+                                        '<div class="row">' +
+                                                '<div class="row-fluid">'+
+                                                    '<div class="span1" style="margin-left: 40px;margin-top: 5px">' +
+                                                        '<img src="style/img/img%20icon/hotel_bg_32.png" alt="">'+
+                                                    '</div>'+
+                                                    '<div class="span2"><h4 style="color: #ffffff;margin-left: 15px">' + $rootScope.donneMarker[i]['nom'] +
+                                                    '</h4></div>' +
+                                                '</div>' +
+                                            '<div class="span3">' +
+                                                '<div class="row-fluid" style="margin-top: 5px;margin-bottom: 5px;margin-left: 10px;">' +
+                                                    '<span class=" badge badge-info">vote : 20</span>' +
+                                                    '<span class=" badge badge-primary">note : 4.2</span>' +
+                                                    '<span class="badge badge-success"><a href="#/compte" style="color: #ffffff;">plus de detaille</a></span>' +
+                                                '</div>' +
+                                            '</div>' +
+                                        '</div>' +
+                                    '</div>' +
+                                '</div>';
+
+            var myOptions = {
+                content: boxText,
+                disableAutoPan: false,
+                maxWidth: 0,
+                pixelOffset: new google.maps.Size(-140, 0),
+                zIndex: null,
+                boxStyle: {
+                    background: "url('http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/examples/tipbox.gif') no-repeat",
+                    opacity: 0.75,
+                    width: "280px"
+                },
+                closeBoxMargin: "-22px 0px 0px 0px",
+                closeBoxURL: "style/img/img%20icon/close_256.png",
+                infoBoxClearance: new google.maps.Size(1, 1),
+                isHidden: false,
+                pane: "floatPane",
+                enableEventPropagation: false};
+
+
+            //Define the infobox
+            $rootScope.markerlist[i].infobox = new InfoBox(myOptions);
+
+            google.maps.event.addListener(marker, 'click', (function (marker, i) {
+                return function () {
+                    $rootScope.markerlist[i].infobox.open(localisation['map'], this);
+                }
+            })(marker, i));
+        }
 
 
         data = {
             lat: position.coords.latitude, lon: position.coords.longitude, city: '', limit: false
         }
+        /*
+         $.ajax({ // fonction permettant de faire de l'ajax
+         type: "POST", // methode de transmission des données au fichier php
+         url: "http://192.168.68.109:8000/api/v1/article/search/", // url du fichier php
+         dataType: 'json',
+         data: data,
+         success: function (data) { // si l'appel a bien fonctionnés
 
-        $.ajax({ // fonction permettant de faire de l'ajax
-            type: "POST", // methode de transmission des données au fichier php
-            url: "http://192.168.68.109:8000/api/v1/article/search/", // url du fichier php
-            dataType: 'json',
-            data: data,
-            success: function (data) { // si l'appel a bien fonctionnés
-
-                console.debug(data);
-                var tmp = ajoutPing(data);
-                $("spinner-wrapper").remove();
-                $scope.$apply();
-            },
-            error: function () {
-                alert('erreur rencontrer');
-            }
-        });
+         console.debug(data);
+         var tmp = ajoutPing(data);
+         $("spinner-wrapper").remove();
+         $scope.$apply();
+         },
+         error: function () {
+         alert('erreur');
+         }
+         });*/
     }
 
     /* //listner sur latitude
@@ -140,22 +216,8 @@ myMapModule.controller('principalController', function ($rootScope, $scope, loca
      * @param json
      */
     function ajoutPing(json) {
-        localisation['mapcenter'] = localisation['map'].getCenter();
         i = 0;
 
-        /*
-         marker[0] = json['objects'][counter]['id'];
-         marker[1] = json['objects'][counter]['name'];
-         marker[2] = json['objects'][counter]['category'];
-         marker[3] = json['objects'][counter]['city'];
-         marker[4] = json['objects'][counter]['rating'];
-         marker[5] = json['objects'][counter]['latitude'];
-         marker[3] = json['objects'][counter]['longitude'];
-         marker[3] = json['objects'][counter]['vote_count'];
-         locations.push();
-         ['Bondi Beach', localisation['mapcenter'].pb, localisation['mapcenter'].qb, 4, "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard ", "coffe", 'style/img/img%20icon/Map-Marker-coffe.png'],
-
-         */
         var infowindow = new google.maps.InfoWindow();
         for (tmp in json['objects']) {
             marker = new google.maps.Marker({
@@ -169,7 +231,7 @@ myMapModule.controller('principalController', function ($rootScope, $scope, loca
 
             google.maps.event.addListener(marker, 'click', (function (marker, i) {
                 return function () {
-                    infowindow.setContent('<div class="span4 animated fadeIn" style="background-color: darkgray">' +
+                    infowindow.setContent('<div class="animated fadeIn" style="width: 100%;background-color: darkgray">' +
                         '<div class="row">' +
                         '<div class="span4">' +
                         '<div class="row">' +
