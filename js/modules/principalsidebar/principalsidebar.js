@@ -53,14 +53,14 @@ myMapModule.controller('sideprincipalController', function ($rootScope, $scope, 
     $scope.refreshTrieCafe = function () {
         if (triecategorie['cafe'] == true) {
             for (i = 0; i < $rootScope.markerlist.length; i++) {
-                if ($rootScope.markerlist[i].category === 'coffe') {
+                if ($rootScope.markerlist[i].category === 'Cafe') {
                     $rootScope.markerlist[i].setMap(null);
                 }
             }
             triecategorie['cafe'] = false;
         } else {
             for (i = 0; i < $rootScope.markerlist.length; i++) {
-                if ($rootScope.markerlist[i].category === 'coffe') {
+                if ($rootScope.markerlist[i].category === 'Cafe') {
                     $rootScope.markerlist[i].setMap($rootScope.map);
                 }
             }
@@ -70,14 +70,14 @@ myMapModule.controller('sideprincipalController', function ($rootScope, $scope, 
     $scope.refreshTrieHotel = function () {
         if (triecategorie['hotel'] == true) {
             for (i = 0; i < $rootScope.markerlist.length; i++) {
-                if ($rootScope.markerlist[i].category === 'hotel') {
+                if ($rootScope.markerlist[i].category === 'Hotel') {
                     $rootScope.markerlist[i].setMap(null);
                 }
             }
             triecategorie['hotel'] = false;
         } else {
             for (i = 0; i < $rootScope.markerlist.length; i++) {
-                if ($rootScope.markerlist[i].category === 'hotel') {
+                if ($rootScope.markerlist[i].category === 'Hotel') {
                     $rootScope.markerlist[i].setMap($rootScope.map);
                 }
             }
@@ -87,14 +87,14 @@ myMapModule.controller('sideprincipalController', function ($rootScope, $scope, 
     $scope.refreshTrieResto = function () {
         if (triecategorie['restaurent'] == true) {
             for (i = 0; i < $rootScope.markerlist.length; i++) {
-                if ($rootScope.markerlist[i].category === 'restaurent') {
+                if ($rootScope.markerlist[i].category === 'Restaurant') {
                     $rootScope.markerlist[i].setMap(null);
                 }
             }
             triecategorie['restaurent'] = false;
         } else {
             for (i = 0; i < $rootScope.markerlist.length; i++) {
-                if ($rootScope.markerlist[i].category === 'restaurent') {
+                if ($rootScope.markerlist[i].category === 'Restaurant') {
                     $rootScope.markerlist[i].setMap($rootScope.map);
                 }
             }

@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="810e8fcb-fd91-4614-be33-8059e5d0c931" name="Default" comment="webstorm">
+    <list default="true" id="810e8fcb-fd91-4614-be33-8059e5d0c931" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/markerclusterer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/note.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/modules/principal/principal.js" afterPath="$PROJECT_DIR$/js/modules/principal/principal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/modules/principalsidebar/principalsidebar.js" afterPath="$PROJECT_DIR$/js/modules/principalsidebar/principalsidebar.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cityMap.iws" />
@@ -25,19 +30,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="39" selection-start="3507" selection-end="3507" vertical-scroll-proportion="-11.769231" vertical-offset="867" max-vertical-offset="3927">
+            <state line="11" column="0" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="3927">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="principal.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="principal.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/modules/principal/principal.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="155" column="32" selection-start="5341" selection-end="5341" vertical-scroll-proportion="0.8003356" vertical-offset="2158" max-vertical-offset="6086">
+            <state line="155" column="32" selection-start="5341" selection-end="5341" vertical-scroll-proportion="0.0" vertical-offset="2635" max-vertical-offset="6086">
               <folding>
                 <marker date="1388424568407" expanded="false" signature="6422:6599" placeholder="..." />
                 <marker date="1388424568407" expanded="false" signature="6730:6763" placeholder="..." />
@@ -52,7 +57,7 @@
       <file leaf-file-name="markerclusterer.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/markerclusterer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1312" column="2" selection-start="34673" selection-end="34673" vertical-scroll-proportion="0.0" vertical-offset="4572" max-vertical-offset="22372">
+            <state line="1312" column="2" selection-start="34673" selection-end="34673" vertical-scroll-proportion="0.0" vertical-offset="22304" max-vertical-offset="22406">
               <folding />
             </state>
           </provider>
@@ -101,6 +106,11 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="terios" />
+      </list>
+    </option>
     <option name="UPDATE_CHANGES_POLICY" value="SHELVE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -452,14 +462,14 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="162" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="162" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="166" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../citymar" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="162" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="837" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="841" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="837" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="161" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="155" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -493,14 +503,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -509,6 +511,14 @@
       <option name="saveOutputToFile" value="false" />
       <option name="showConsoleOnStdErr" value="false" />
       <option name="showConsoleOnStdOut" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
@@ -620,7 +630,11 @@
       <created>1388409905388</created>
       <updated>1388409905388</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="webstorm">
+      <created>1388438569666</created>
+      <updated>1388438569666</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -645,13 +659,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5392321" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32888147" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17349927" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1852123" sideWeight="0.67202574" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1852123" sideWeight="0.45980707" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5401929" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -713,11 +727,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/style/css/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="35" selection-start="789" selection-end="808" vertical-scroll-proportion="0.48833033" vertical-offset="51" max-vertical-offset="1717">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
+        <state line="19" column="35" selection-start="789" selection-end="808" vertical-scroll-proportion="0.48833033" vertical-offset="51" max-vertical-offset="1717" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/modules/principal/principal.tpl.html">
@@ -739,9 +749,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/laraki_map.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="0" selection-start="1716" selection-end="1716" vertical-scroll-proportion="0.9403509" vertical-offset="348" max-vertical-offset="3145">
-          <folding />
-        </state>
+        <state line="52" column="0" selection-start="1716" selection-end="1716" vertical-scroll-proportion="0.9403509" vertical-offset="348" max-vertical-offset="3145" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/note.js">
@@ -766,13 +774,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="39" selection-start="3507" selection-end="3507" vertical-scroll-proportion="-11.769231" vertical-offset="867" max-vertical-offset="3927">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/markerclusterer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1312" column="2" selection-start="34673" selection-end="34673" vertical-scroll-proportion="0.0" vertical-offset="4572" max-vertical-offset="22372">
@@ -782,7 +783,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/modules/principal/principal.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="155" column="32" selection-start="5341" selection-end="5341" vertical-scroll-proportion="0.8003356" vertical-offset="2158" max-vertical-offset="6086">
+        <state line="155" column="32" selection-start="5341" selection-end="5341" vertical-scroll-proportion="0.0" vertical-offset="2158" max-vertical-offset="6086">
           <folding>
             <marker date="1388424568407" expanded="false" signature="6422:6599" placeholder="..." />
             <marker date="1388424568407" expanded="false" signature="6730:6763" placeholder="..." />
@@ -790,6 +791,13 @@
             <marker date="1388424568407" expanded="false" signature="7132:7185" placeholder="..." />
             <marker date="1388424568407" expanded="false" signature="7482:7497" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="3927">
+          <folding />
         </state>
       </provider>
     </entry>
