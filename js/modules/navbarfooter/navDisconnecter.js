@@ -8,6 +8,7 @@ myMapModule.controller('navDisconnecterController', function ($scope, $location)
 
     $scope.afficheRechDetail = false;
 
+    $scope.isCollapsed = false;
     $scope.openAuth = function () {
         $location.path("/auth");
     }

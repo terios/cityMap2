@@ -92,7 +92,7 @@ myMapModule.controller('principalController', function ($rootScope, $scope, loca
 
         $.ajax({ // fonction permettant de faire de l'ajax
             type: "POST", // methode de transmission des données au fichier php
-            url: "http://sheltered-lake-2062.herokuapp.com/api/v1/article/search/", // url du fichier php
+            url: "http://mdinti.herokuapp.com/api/v1/article/search/", // url du fichier php
             dataType: 'json',
             data: data,
             success: function (data) { // si l'appel a bien fonctionnés
@@ -131,7 +131,8 @@ myMapModule.controller('principalController', function ($rootScope, $scope, loca
      */
     function ajoutPing(json) {
         i = 0;
-
+        $rootScope.markerlist = [];
+        console.debug(json['objects'].length);
         for (tmp in json['objects']) {
             switch (json['objects'][i]['category']) {
                 case 'Hotel':
@@ -162,6 +163,7 @@ myMapModule.controller('principalController', function ($rootScope, $scope, loca
                     json['objects'][i]['description'] = "style/img/img%20icon/marker_contribution.png";
                     break;
             }
+            //console.debug(json['objects'][i]['category']);
             marker = new google.maps.Marker({
                 position: new google.maps.LatLng(json['objects'][i]['latitude'], json['objects'][i]['longitude']),
                 map: localisation['map'],
@@ -170,6 +172,7 @@ myMapModule.controller('principalController', function ($rootScope, $scope, loca
                 icon: json['objects'][i]['description'],
                 category: json['objects'][i]['category']
             });
+
             $rootScope.markerlist.push(marker);
 
             var boxText = document.createElement("div");
@@ -180,8 +183,8 @@ myMapModule.controller('principalController', function ($rootScope, $scope, loca
                 '<div class="span1" style="margin-left: 40px;margin-top: 5px">' +
                 '<img src="style/img/img%20icon/hotel_bg_32.png" alt="">' +
                 '</div>' +
-                '<div class="span2"><h4 style="color: #ffffff;margin-left: 15px">' + json['objects'][i]['name'] +
-                '</h4></div>' +
+                '<div class="span8"><h5 style="color: #ffffff;margin-left: 15px">' + json['objects'][i]['name'] +
+                '</h5></div>' +
                 '</div>' +
                 '<div class="span3">' +
                 '<div class="row-fluid" style="margin-top: 5px;margin-bottom: 5px;margin-left: 10px;">' +
@@ -221,34 +224,11 @@ myMapModule.controller('principalController', function ($rootScope, $scope, loca
                     $rootScope.markerlist[i].infobox.open(localisation['map'], this);
                 }
             })(marker, i));
-            $rootScope.markerlist.push(marker);
             i++;
         }
-        var markerCluster = new MarkerClusterer(localisation['map'], $rootScope.markerlist);
+        $rootScope.markerCluster = new MarkerClusterer(localisation['map'], $rootScope.markerlist, { ignoreHidden: true });
     }
 
-    function addMarker(map, latlong, title, content) {
-
-        var markerOptions = {
-            position: latlong,
-            map: map,
-            title: title,
-            clickable: true
-        };
-
-        var marker = new google.maps.Marker(markerOptions);
-
-        var infoWindowOptions = {
-            content: content,
-            position: latlong
-        };
-        var infoWindow = new google.maps.InfoWindow(infoWindowOptions);
-        /*google.maps.event.addListener(marker, "click", function () {
-         infoWindow.open(map);
-         });*/
-        $scope.listMarker.push(marker);
-
-    }
 
     /**
      * calcule la distance entre deux point donnee
@@ -256,17 +236,22 @@ myMapModule.controller('principalController', function ($rootScope, $scope, loca
      * @param finishCoord
      * @returns {number}
      */
+
     function computeDistance(startCoord, finishCoord) {
-        var startLatRads = degreesToRadians(startCoord.latitude);
-        var startLongRads = degreesToRadians(startCoord.longitude);
+        console.debug(startCoord);
+        console.debug(finishCoord);
+        var startLatRads = degreesToRadians(startCoord.position.nb);
+        var startLongRads = degreesToRadians(startCoord.position.ob);
         var destLatRads = degreesToRadians(finishCoord.latitude);
         var destLongRads = degreesToRadians(finishCoord.longitude);
         var Radius = 6371; // radius of the Earth in km
         var distance = Math.acos(Math.sin(startLatRads) * Math.sin(destLatRads) +
             Math.cos(startLatRads) * Math.cos(destLatRads) *
                 Math.cos(startLongRads - destLongRads)) * Radius;
+
         return distance;
     }
+
 
     /**
      * affiche les erreure relatuve a la geolocatisation
@@ -295,6 +280,7 @@ myMapModule.controller('principalController', function ($rootScope, $scope, loca
     /**
      * refresh actualise la carte et demande les markers les plus pres du nouveau centre
      */
+
     $scope.refresh = function () {
 
         localisation['mapcenter'] = localisation['map'].getCenter();
@@ -331,7 +317,7 @@ myMapModule.controller('principalController', function ($rootScope, $scope, loca
 
         $.ajax({ // fonction permettant de faire de l'ajax
             type: "POST", // methode de transmission des données au fichier php
-            url: "http://sheltered-lake-2062.herokuapp.com/api/v1/article/search/", // url du fichier php
+            url: "http://mdinti.herokuapp.com/api/v1/article/search/", // url du fichier php
             dataType: 'json',
             data: data,
             success: function (data) { // si l'appel a bien fonctionnés

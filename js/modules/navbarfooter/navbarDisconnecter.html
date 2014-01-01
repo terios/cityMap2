@@ -1,17 +1,18 @@
 <header>
-    <div class="container">
+    <div class="container hidden-tablet hidden-phone">
 
 
         <div class="logo-container">
             <!-- Website Logo -->
             <a href="#" title="CityMap" style="color: #588ac2">
-                Logo Site
+                <img src="style/img/img%20icon/logo.png" width="30px" style="z-index:1000;">
             </a>
         </div>
 
 
         <!-- Start of Main Navigation -->
         <nav class="main-nav" ng-controller="navfooController">
+
             <div class="menu-top-menu-container">
                 <ul id="menu-top-menu" class="clearfix">
                     <li class="current-menu-item"><a href="index-2.html" style="font-size: 15px">Acceuille</a></li>
@@ -42,9 +43,44 @@
                 </ul>
 
             </div>
+
         </nav>
         <!-- End of Main Navigation -->
 
+    </div>
+
+    <div class="navbar hidden-desktop">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" ng-click="isCollapsed = !isCollapsed">
+                    <span class="icon-th-list"></span></a>
+
+                <a href="#" class="brand"><h3 style="margin-top: 0;">Mdinti</h3></a>
+
+                <div class="pull-right">
+                    <div ng-controller="navDisconnecterController">
+                        <div class="btn-group">
+                            <a class="btn" ng-click="openAuth()"><img src="style/img/img%20icon/login-icon.png"
+                                                                      width="28px">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a class="btn btn-navbar" ng-click="isCollapsed = !isCollapsed">
+                    <span class="icon-search"></span></a>
+                <input type="text" class="animated fadeIn pull-right" placeholder="Recherche"
+                       style="width: 20%;margin-top: 7px; margin-left: 2px;margin-right: 2px;">
+
+                <div class="nav-collapse" collapse="isCollapsed">
+                    <ul class="nav pull-right">
+                        <li class="current-menu-item"><a href="index-2.html" style="font-size: 15px">Acceuille</a></li>
+                        <li><a href="#" style="font-size: 15px">Lieu</a></li>
+                        <li><a href="#" style="font-size: 15px">Contact</a></li>
+                        <li><a href="#" style="font-size: 15px">Apropos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 
 </header>

@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="810e8fcb-fd91-4614-be33-8059e5d0c931" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/markerclusterer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/note.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/img/img icon/login-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/img/img icon/logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/css/default.css" afterPath="$PROJECT_DIR$/style/css/default.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/markerclusterer.js" afterPath="$PROJECT_DIR$/lib/markerclusterer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/modules/navbarfooter/navDisconnecter.js" afterPath="$PROJECT_DIR$/js/modules/navbarfooter/navDisconnecter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/modules/navbarfooter/navbarDisconnecter.html" afterPath="$PROJECT_DIR$/js/modules/navbarfooter/navbarDisconnecter.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/modules/principal/principal.js" afterPath="$PROJECT_DIR$/js/modules/principal/principal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/modules/principal/principal.tpl.html" afterPath="$PROJECT_DIR$/js/modules/principal/principal.tpl.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/modules/principalsidebar/principalsidebar.js" afterPath="$PROJECT_DIR$/js/modules/principalsidebar/principalsidebar.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -30,10 +35,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="3927">
+            <state line="22" column="73" selection-start="961" selection-end="961" vertical-scroll-proportion="-0.0" vertical-offset="374" max-vertical-offset="3927">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="navbarDisconnecter.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/modules/navbarfooter/navbarDisconnecter.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="65" column="30" selection-start="2820" selection-end="2820" vertical-scroll-proportion="-9.5" vertical-offset="42" max-vertical-offset="612">
+              <folding>
+                <element signature="tag#div#0;tag#header#0" expanded="false" />
+                <element signature="tag#div#0;tag#div#0;tag#header#0" expanded="false" />
+                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#header#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#header#0;n#!!top" expanded="true" />
+                <element signature="tag#nav#0;tag#div#0;tag#header#0" expanded="false" />
+                <element signature="n#style#0;n#h3#0;n#a#1;n#div#0;n#div#0;n#div#1;n#header#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#1;n#header#0;n#!!top" expanded="true" />
+                <element signature="tag#div#1;tag#div#0;tag#div#0;tag#div#1;tag#header#0" expanded="false" />
+                <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#1;n#header#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#1;n#header#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#1;n#header#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#3;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#1;n#header#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="navDisconnecter.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/modules/navbarfooter/navDisconnecter.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="31" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="476">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/style/css/default.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="182" column="1" selection-start="3359" selection-end="3359" vertical-scroll-proportion="0.0" vertical-offset="2668" max-vertical-offset="3264">
               <folding />
             </state>
           </provider>
@@ -42,48 +87,22 @@
       <file leaf-file-name="principal.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/modules/principal/principal.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="155" column="32" selection-start="5341" selection-end="5341" vertical-scroll-proportion="0.0" vertical-offset="2635" max-vertical-offset="6086">
+            <state line="228" column="121" selection-start="9083" selection-end="9083" vertical-scroll-proportion="0.0" vertical-offset="3480" max-vertical-offset="5848">
               <folding>
-                <marker date="1388424568407" expanded="false" signature="6422:6599" placeholder="..." />
-                <marker date="1388424568407" expanded="false" signature="6730:6763" placeholder="..." />
-                <marker date="1388424568407" expanded="false" signature="6919:6951" placeholder="..." />
-                <marker date="1388424568407" expanded="false" signature="7132:7185" placeholder="..." />
-                <marker date="1388424568407" expanded="false" signature="7482:7497" placeholder="..." />
+                <marker date="1388586372627" expanded="false" signature="6553:6730" placeholder="..." />
+                <marker date="1388586372627" expanded="false" signature="6861:6894" placeholder="..." />
+                <marker date="1388586372627" expanded="false" signature="7050:7082" placeholder="..." />
+                <marker date="1388586372627" expanded="false" signature="7263:7316" placeholder="..." />
+                <marker date="1388586372627" expanded="false" signature="7613:7628" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="markerclusterer.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/markerclusterer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1312" column="2" selection-start="34673" selection-end="34673" vertical-scroll-proportion="0.0" vertical-offset="22304" max-vertical-offset="22406">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="note.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/note.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="16" selection-start="611" selection-end="611" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="2108">
-              <folding>
-                <marker date="1388420280502" expanded="false" signature="2851:3028" placeholder="..." />
-                <marker date="1388420280502" expanded="false" signature="3147:3179" placeholder="..." />
-                <marker date="1388420280502" expanded="false" signature="3334:3387" placeholder="..." />
-                <marker date="1388420280502" expanded="false" signature="3415:3432" placeholder="..." />
-                <marker date="1388420280502" expanded="false" signature="3502:3519" placeholder="..." />
-                <marker date="1388420280502" expanded="false" signature="3593:3610" placeholder="..." />
-                <marker date="1388420280502" expanded="false" signature="3666:3681" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="principalsidebar.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="principalsidebar.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/modules/principalsidebar/principalsidebar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="69" selection-start="3568" selection-end="3568" vertical-scroll-proportion="0.0" vertical-offset="1185" max-vertical-offset="3315">
+            <state line="199" column="60" selection-start="8198" selection-end="8198" vertical-scroll-proportion="3.8576329" vertical-offset="1134" max-vertical-offset="3621">
               <folding />
             </state>
           </provider>
@@ -92,7 +111,7 @@
       <file leaf-file-name="principal.tpl.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/modules/principal/principal.tpl.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="6" selection-start="560" selection-end="560" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="374">
+            <state line="10" column="53" selection-start="463" selection-end="463" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="408">
               <folding />
             </state>
           </provider>
@@ -123,22 +142,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/js/app.config.js" />
         <option value="$PROJECT_DIR$/js/modules/auth/auth.tpl.html" />
         <option value="$PROJECT_DIR$/js/modules/auth/auth.js" />
         <option value="$PROJECT_DIR$/js/modules/compte/compte.tpl.html" />
         <option value="$PROJECT_DIR$/lib/infobox.js" />
         <option value="$PROJECT_DIR$/style/css/test.html" />
-        <option value="$PROJECT_DIR$/style/css/default.css" />
-        <option value="$PROJECT_DIR$/js/modules/navbarfooter/navbarDisconnecter.html" />
         <option value="$PROJECT_DIR$/js/modules/navbarfooter/navbarConnecter.tpl.html" />
-        <option value="$PROJECT_DIR$/js/modules/principal/principal.tpl.html" />
         <option value="$PROJECT_DIR$/laraki_map.html" />
         <option value="$PROJECT_DIR$/note.js" />
-        <option value="$PROJECT_DIR$/js/modules/principalsidebar/principalsidebar.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/js/modules/principal/principal.js" />
+        <option value="$PROJECT_DIR$/style/css/default.css" />
+        <option value="$PROJECT_DIR$/js/modules/principal/principal.tpl.html" />
+        <option value="$PROJECT_DIR$/js/modules/navbarfooter/navDisconnecter.js" />
+        <option value="$PROJECT_DIR$/js/modules/navbarfooter/navbarDisconnecter.html" />
         <option value="$PROJECT_DIR$/lib/markerclusterer.js" />
+        <option value="$PROJECT_DIR$/js/modules/principal/principal.js" />
+        <option value="$PROJECT_DIR$/js/modules/principalsidebar/principalsidebar.js" />
       </list>
     </option>
   </component>
@@ -462,14 +481,14 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="162" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="162" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="166" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="166" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../citymar" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="162" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="841" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="837" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="841" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="161" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="155" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -503,6 +522,14 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -511,14 +538,6 @@
       <option name="saveOutputToFile" value="false" />
       <option name="showConsoleOnStdErr" value="false" />
       <option name="showConsoleOnStdOut" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
@@ -634,7 +653,11 @@
       <created>1388438569666</created>
       <updated>1388438569666</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="webstorm">
+      <created>1388488437338</created>
+      <updated>1388488437338</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -659,13 +682,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5392321" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32888147" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17349927" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1852123" sideWeight="0.45980707" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21815519" sideWeight="0.45980707" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5401929" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -695,31 +718,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/modules/auth/auth.tpl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="2363" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/modules/auth/auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="54" selection-start="2355" selection-end="2355" vertical-scroll-proportion="0.0" vertical-offset="1189" max-vertical-offset="2210" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style/css/default.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="14" selection-start="490" selection-end="490" vertical-scroll-proportion="0.0" vertical-offset="186" max-vertical-offset="3179" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/modules/navbarfooter/navbarConnecter.tpl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="20" selection-start="194" selection-end="194" vertical-scroll-proportion="0.27546296" vertical-offset="0" max-vertical-offset="918" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/modules/navbarfooter/navbarDisconnecter.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="20" selection-start="194" selection-end="194" vertical-scroll-proportion="0.27546296" vertical-offset="0" max-vertical-offset="935" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/modules/compte/compte.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="82" column="84" selection-start="3790" selection-end="3790" vertical-scroll-proportion="0.094736844" vertical-offset="1340" max-vertical-offset="2618" />
@@ -727,13 +725,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/style/css/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="35" selection-start="789" selection-end="808" vertical-scroll-proportion="0.48833033" vertical-offset="51" max-vertical-offset="1717" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/modules/principal/principal.tpl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="6" selection-start="560" selection-end="560" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="374">
-          <folding />
+        <state line="19" column="35" selection-start="789" selection-end="808" vertical-scroll-proportion="0.48833033" vertical-offset="51" max-vertical-offset="1717">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -749,54 +744,101 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/laraki_map.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="0" selection-start="1716" selection-end="1716" vertical-scroll-proportion="0.9403509" vertical-offset="348" max-vertical-offset="3145" />
+        <state line="52" column="0" selection-start="1716" selection-end="1716" vertical-scroll-proportion="0.9403509" vertical-offset="348" max-vertical-offset="3145">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/note.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="16" selection-start="611" selection-end="611" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="2108">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/css/blue-skin5152.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="9" selection-start="571" selection-end="574" vertical-scroll-proportion="-2.0018017" vertical-offset="1315" max-vertical-offset="1870" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/css/bootstrap5152.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3660" column="4" selection-start="73132" selection-end="73135" vertical-scroll-proportion="0.3321033" vertical-offset="62040" max-vertical-offset="97444" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/css/default.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="182" column="1" selection-start="3359" selection-end="3359" vertical-scroll-proportion="0.0" vertical-offset="2668" max-vertical-offset="3264">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="73" selection-start="961" selection-end="961" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="3927">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/modules/navbarfooter/navDisconnecter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="31" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/modules/principal/principal.tpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="53" selection-start="463" selection-end="463" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="408">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/modules/navbarfooter/navbarDisconnecter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="30" selection-start="2820" selection-end="2820" vertical-scroll-proportion="-9.5" vertical-offset="42" max-vertical-offset="612">
           <folding>
-            <marker date="1388420280502" expanded="false" signature="2851:3028" placeholder="..." />
-            <marker date="1388420280502" expanded="false" signature="3147:3179" placeholder="..." />
-            <marker date="1388420280502" expanded="false" signature="3334:3387" placeholder="..." />
-            <marker date="1388420280502" expanded="false" signature="3415:3432" placeholder="..." />
-            <marker date="1388420280502" expanded="false" signature="3502:3519" placeholder="..." />
-            <marker date="1388420280502" expanded="false" signature="3593:3610" placeholder="..." />
-            <marker date="1388420280502" expanded="false" signature="3666:3681" placeholder="..." />
+            <element signature="tag#div#0;tag#header#0" expanded="false" />
+            <element signature="tag#div#0;tag#div#0;tag#header#0" expanded="false" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#header#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#header#0;n#!!top" expanded="true" />
+            <element signature="tag#nav#0;tag#div#0;tag#header#0" expanded="false" />
+            <element signature="n#style#0;n#h3#0;n#a#1;n#div#0;n#div#0;n#div#1;n#header#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#1;n#header#0;n#!!top" expanded="true" />
+            <element signature="tag#div#1;tag#div#0;tag#div#0;tag#div#1;tag#header#0" expanded="false" />
+            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#1;n#header#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#1;n#header#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#1;n#header#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#3;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#1;n#header#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/markerclusterer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1642" column="0" selection-start="53656" selection-end="53656" vertical-scroll-proportion="0.9639794" vertical-offset="27352" max-vertical-offset="28016">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/modules/principal/principal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="228" column="121" selection-start="9083" selection-end="9083" vertical-scroll-proportion="0.0" vertical-offset="3480" max-vertical-offset="5848">
+          <folding>
+            <marker date="1388586372627" expanded="false" signature="6553:6730" placeholder="..." />
+            <marker date="1388586372627" expanded="false" signature="6861:6894" placeholder="..." />
+            <marker date="1388586372627" expanded="false" signature="7050:7082" placeholder="..." />
+            <marker date="1388586372627" expanded="false" signature="7263:7316" placeholder="..." />
+            <marker date="1388586372627" expanded="false" signature="7613:7628" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/modules/principalsidebar/principalsidebar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="69" selection-start="3568" selection-end="3568" vertical-scroll-proportion="0.0" vertical-offset="1185" max-vertical-offset="3315">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/markerclusterer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1312" column="2" selection-start="34673" selection-end="34673" vertical-scroll-proportion="0.0" vertical-offset="4572" max-vertical-offset="22372">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/modules/principal/principal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="155" column="32" selection-start="5341" selection-end="5341" vertical-scroll-proportion="0.0" vertical-offset="2158" max-vertical-offset="6086">
-          <folding>
-            <marker date="1388424568407" expanded="false" signature="6422:6599" placeholder="..." />
-            <marker date="1388424568407" expanded="false" signature="6730:6763" placeholder="..." />
-            <marker date="1388424568407" expanded="false" signature="6919:6951" placeholder="..." />
-            <marker date="1388424568407" expanded="false" signature="7132:7185" placeholder="..." />
-            <marker date="1388424568407" expanded="false" signature="7482:7497" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="3927">
+        <state line="199" column="60" selection-start="8198" selection-end="8198" vertical-scroll-proportion="3.8576329" vertical-offset="1134" max-vertical-offset="3621">
           <folding />
         </state>
       </provider>

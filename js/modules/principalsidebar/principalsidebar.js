@@ -54,7 +54,8 @@ myMapModule.controller('sideprincipalController', function ($rootScope, $scope, 
         if (triecategorie['cafe'] == true) {
             for (i = 0; i < $rootScope.markerlist.length; i++) {
                 if ($rootScope.markerlist[i].category === 'Cafe') {
-                    $rootScope.markerlist[i].setMap(null);
+                    $rootScope.markerlist[i].setVisible(false);
+                    $rootScope.markerCluster.repaint();
                 }
             }
             triecategorie['cafe'] = false;
@@ -62,23 +63,28 @@ myMapModule.controller('sideprincipalController', function ($rootScope, $scope, 
             for (i = 0; i < $rootScope.markerlist.length; i++) {
                 if ($rootScope.markerlist[i].category === 'Cafe') {
                     $rootScope.markerlist[i].setMap($rootScope.map);
+                    $rootScope.markerlist[i].setVisible(true);
+                    $rootScope.markerCluster.repaint();
                 }
             }
             triecategorie['cafe'] = true;
         }
+
     }
     $scope.refreshTrieHotel = function () {
         if (triecategorie['hotel'] == true) {
             for (i = 0; i < $rootScope.markerlist.length; i++) {
                 if ($rootScope.markerlist[i].category === 'Hotel') {
-                    $rootScope.markerlist[i].setMap(null);
+                    $rootScope.markerlist[i].setVisible(false);
+                    $rootScope.markerCluster.repaint();
                 }
             }
             triecategorie['hotel'] = false;
         } else {
             for (i = 0; i < $rootScope.markerlist.length; i++) {
                 if ($rootScope.markerlist[i].category === 'Hotel') {
-                    $rootScope.markerlist[i].setMap($rootScope.map);
+                    $rootScope.markerlist[i].setVisible(true);
+                    $rootScope.markerCluster.repaint();
                 }
             }
             triecategorie['hotel'] = true;
@@ -88,14 +94,16 @@ myMapModule.controller('sideprincipalController', function ($rootScope, $scope, 
         if (triecategorie['restaurent'] == true) {
             for (i = 0; i < $rootScope.markerlist.length; i++) {
                 if ($rootScope.markerlist[i].category === 'Restaurant') {
-                    $rootScope.markerlist[i].setMap(null);
+                    $rootScope.markerlist[i].setVisible(false);
+                    $rootScope.markerCluster.repaint();
                 }
             }
             triecategorie['restaurent'] = false;
         } else {
             for (i = 0; i < $rootScope.markerlist.length; i++) {
                 if ($rootScope.markerlist[i].category === 'Restaurant') {
-                    $rootScope.markerlist[i].setMap($rootScope.map);
+                    $rootScope.markerlist[i].setVisible(true);
+                    $rootScope.markerCluster.repaint();
                 }
             }
             triecategorie['restaurent'] = true;
@@ -105,14 +113,16 @@ myMapModule.controller('sideprincipalController', function ($rootScope, $scope, 
         if (triecategorie['club'] == true) {
             for (i = 0; i < $rootScope.markerlist.length; i++) {
                 if ($rootScope.markerlist[i].category === 'club') {
-                    $rootScope.markerlist[i].setMap(null);
+                    $rootScope.markerlist[i].setVisible(false);
+                    $rootScope.markerCluster.repaint();
                 }
             }
             triecategorie['club'] = false;
         } else {
             for (i = 0; i < $rootScope.markerlist.length; i++) {
                 if ($rootScope.markerlist[i].category === 'club') {
-                    $rootScope.markerlist[i].setMap($rootScope.map);
+                    $rootScope.markerlist[i].setVisible(true);
+                    $rootScope.markerCluster.repaint();
                 }
             }
             triecategorie['club'] = true;
@@ -122,14 +132,16 @@ myMapModule.controller('sideprincipalController', function ($rootScope, $scope, 
         if (triecategorie['gare'] == true) {
             for (i = 0; i < $rootScope.markerlist.length; i++) {
                 if ($rootScope.markerlist[i].category === 'gare') {
-                    $rootScope.markerlist[i].setMap(null);
+                    $rootScope.markerlist[i].setVisible(false);
+                    $rootScope.markerCluster.repaint();
                 }
             }
             triecategorie['gare'] = false;
         } else {
             for (i = 0; i < $rootScope.markerlist.length; i++) {
                 if ($rootScope.markerlist[i].category === 'gare') {
-                    $rootScope.markerlist[i].setMap($rootScope.map);
+                    $rootScope.markerlist[i].setVisible(true);
+                    $rootScope.markerCluster.repaint();
                 }
             }
             triecategorie['gare'] = true;
@@ -139,14 +151,16 @@ myMapModule.controller('sideprincipalController', function ($rootScope, $scope, 
         if (triecategorie['mosque'] == true) {
             for (i = 0; i < $rootScope.markerlist.length; i++) {
                 if ($rootScope.markerlist[i].category === 'mosque') {
-                    $rootScope.markerlist[i].setMap(null);
+                    $rootScope.markerlist[i].setVisible(false);
+                    $rootScope.markerCluster.repaint();
                 }
             }
             triecategorie['mosque'] = false;
         } else {
             for (i = 0; i < $rootScope.markerlist.length; i++) {
                 if ($rootScope.markerlist[i].category === 'mosque') {
-                    $rootScope.markerlist[i].setMap($rootScope.map);
+                    $rootScope.markerlist[i].setVisible(true);
+                    $rootScope.markerCluster.repaint();
                 }
             }
             triecategorie['mosque'] = true;
@@ -156,14 +170,16 @@ myMapModule.controller('sideprincipalController', function ($rootScope, $scope, 
         if (triecategorie['hopital'] == true) {
             for (i = 0; i < $rootScope.markerlist.length; i++) {
                 if ($rootScope.markerlist[i].category === 'hopital') {
-                    $rootScope.markerlist[i].setMap(null);
+                    $rootScope.markerlist[i].setVisible(false);
+                    $rootScope.markerCluster.repaint();
                 }
             }
             triecategorie['hopital'] = false;
         } else {
             for (i = 0; i < $rootScope.markerlist.length; i++) {
                 if ($rootScope.markerlist[i].category === 'hopital') {
-                    $rootScope.markerlist[i].setMap($rootScope.map);
+                    $rootScope.markerlist[i].setVisible(true);
+                    $rootScope.markerCluster.repaint();
                 }
             }
             triecategorie['hopital'] = true;
@@ -173,14 +189,16 @@ myMapModule.controller('sideprincipalController', function ($rootScope, $scope, 
         if (triecategorie['shop'] == true) {
             for (i = 0; i < $rootScope.markerlist.length; i++) {
                 if ($rootScope.markerlist[i].category === 'shop') {
-                    $rootScope.markerlist[i].setMap(null);
+                    $rootScope.markerlist[i].setVisible(false);
+                    $rootScope.markerCluster.repaint();
                 }
             }
             triecategorie['shop'] = false;
         } else {
             for (i = 0; i < $rootScope.markerlist.length; i++) {
                 if ($rootScope.markerlist[i].category === 'shop') {
-                    $rootScope.markerlist[i].setMap($rootScope.map);
+                    $rootScope.markerlist[i].setVisible(true);
+                    $rootScope.markerCluster.repaint();
                 }
             }
             triecategorie['shop'] = true;
