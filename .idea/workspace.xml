@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="810e8fcb-fd91-4614-be33-8059e5d0c931" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/img/img icon/login-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/img/img icon/logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/css/default.css" afterPath="$PROJECT_DIR$/style/css/default.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/markerclusterer.js" afterPath="$PROJECT_DIR$/lib/markerclusterer.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/modules/navbarfooter/navDisconnecter.js" afterPath="$PROJECT_DIR$/js/modules/navbarfooter/navDisconnecter.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/modules/navbarfooter/navbarDisconnecter.html" afterPath="$PROJECT_DIR$/js/modules/navbarfooter/navbarDisconnecter.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/modules/principal/principal.js" afterPath="$PROJECT_DIR$/js/modules/principal/principal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/modules/principal/principal.tpl.html" afterPath="$PROJECT_DIR$/js/modules/principal/principal.tpl.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/modules/principalsidebar/principalsidebar.js" afterPath="$PROJECT_DIR$/js/modules/principalsidebar/principalsidebar.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -38,38 +32,40 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="73" selection-start="961" selection-end="961" vertical-scroll-proportion="-0.0" vertical-offset="374" max-vertical-offset="3927">
+            <state line="22" column="73" selection-start="961" selection-end="961" vertical-scroll-proportion="19.615385" vertical-offset="884" max-vertical-offset="3927">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="navbarDisconnecter.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/modules/navbarfooter/navbarDisconnecter.html">
+      <file leaf-file-name="navbarConnecter.tpl.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/modules/navbarfooter/navbarConnecter.tpl.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="30" selection-start="2820" selection-end="2820" vertical-scroll-proportion="-9.5" vertical-offset="42" max-vertical-offset="612">
+            <state line="14" column="47" selection-start="364" selection-end="387" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="918">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="principal.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/modules/principal/principal.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="155" column="38" selection-start="5386" selection-end="5402" vertical-scroll-proportion="0.0" vertical-offset="2256" max-vertical-offset="5848">
               <folding>
-                <element signature="tag#div#0;tag#header#0" expanded="false" />
-                <element signature="tag#div#0;tag#div#0;tag#header#0" expanded="false" />
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#header#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#header#0;n#!!top" expanded="true" />
-                <element signature="tag#nav#0;tag#div#0;tag#header#0" expanded="false" />
-                <element signature="n#style#0;n#h3#0;n#a#1;n#div#0;n#div#0;n#div#1;n#header#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#1;n#header#0;n#!!top" expanded="true" />
-                <element signature="tag#div#1;tag#div#0;tag#div#0;tag#div#1;tag#header#0" expanded="false" />
-                <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#1;n#header#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#1;n#header#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#1;n#header#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#li#3;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#1;n#header#0;n#!!top" expanded="true" />
+                <marker date="1388669722888" expanded="false" signature="6571:6748" placeholder="..." />
+                <marker date="1388669722888" expanded="false" signature="6879:6912" placeholder="..." />
+                <marker date="1388669722888" expanded="false" signature="7068:7100" placeholder="..." />
+                <marker date="1388669722888" expanded="false" signature="7281:7334" placeholder="..." />
+                <marker date="1388669722888" expanded="false" signature="7631:7646" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="navDisconnecter.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/modules/navbarfooter/navDisconnecter.js">
+      <file leaf-file-name="principalsidebar.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/modules/principalsidebar/principalsidebar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="31" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="476">
+            <state line="168" column="45" selection-start="6868" selection-end="6868" vertical-scroll-proportion="0.5626072" vertical-offset="2528" max-vertical-offset="3621">
               <folding />
             </state>
           </provider>
@@ -79,30 +75,6 @@
         <entry file="file://$PROJECT_DIR$/style/css/default.css">
           <provider selected="true" editor-type-id="text-editor">
             <state line="182" column="1" selection-start="3359" selection-end="3359" vertical-scroll-proportion="0.0" vertical-offset="2668" max-vertical-offset="3264">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="principal.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/modules/principal/principal.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="228" column="121" selection-start="9083" selection-end="9083" vertical-scroll-proportion="0.0" vertical-offset="3480" max-vertical-offset="5848">
-              <folding>
-                <marker date="1388586372627" expanded="false" signature="6553:6730" placeholder="..." />
-                <marker date="1388586372627" expanded="false" signature="6861:6894" placeholder="..." />
-                <marker date="1388586372627" expanded="false" signature="7050:7082" placeholder="..." />
-                <marker date="1388586372627" expanded="false" signature="7263:7316" placeholder="..." />
-                <marker date="1388586372627" expanded="false" signature="7613:7628" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="principalsidebar.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/modules/principalsidebar/principalsidebar.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="199" column="60" selection-start="8198" selection-end="8198" vertical-scroll-proportion="3.8576329" vertical-offset="1134" max-vertical-offset="3621">
               <folding />
             </state>
           </provider>
@@ -153,9 +125,9 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/style/css/default.css" />
         <option value="$PROJECT_DIR$/js/modules/principal/principal.tpl.html" />
+        <option value="$PROJECT_DIR$/lib/markerclusterer.js" />
         <option value="$PROJECT_DIR$/js/modules/navbarfooter/navDisconnecter.js" />
         <option value="$PROJECT_DIR$/js/modules/navbarfooter/navbarDisconnecter.html" />
-        <option value="$PROJECT_DIR$/lib/markerclusterer.js" />
         <option value="$PROJECT_DIR$/js/modules/principal/principal.js" />
         <option value="$PROJECT_DIR$/js/modules/principalsidebar/principalsidebar.js" />
       </list>
@@ -204,7 +176,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -475,6 +446,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -657,7 +629,11 @@
       <created>1388488437338</created>
       <updated>1388488437338</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="webstorm">
+      <created>1388586896601</created>
+      <updated>1388586896601</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -718,18 +694,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/modules/compte/compte.tpl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="84" selection-start="3790" selection-end="3790" vertical-scroll-proportion="0.094736844" vertical-offset="1340" max-vertical-offset="2618" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/style/css/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="35" selection-start="789" selection-end="808" vertical-scroll-proportion="0.48833033" vertical-offset="51" max-vertical-offset="1717">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
+        <state line="19" column="35" selection-start="789" selection-end="808" vertical-scroll-proportion="0.48833033" vertical-offset="51" max-vertical-offset="1717" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/style/img/img icon/marker_cafe.png">
@@ -766,27 +733,6 @@
         <state line="3660" column="4" selection-start="73132" selection-end="73135" vertical-scroll-proportion="0.3321033" vertical-offset="62040" max-vertical-offset="97444" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style/css/default.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="182" column="1" selection-start="3359" selection-end="3359" vertical-scroll-proportion="0.0" vertical-offset="2668" max-vertical-offset="3264">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="73" selection-start="961" selection-end="961" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="3927">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/modules/navbarfooter/navDisconnecter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="31" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/modules/principal/principal.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="53" selection-start="463" selection-end="463" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="408">
@@ -794,18 +740,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/markerclusterer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1642" column="0" selection-start="53656" selection-end="53656" vertical-scroll-proportion="0.9639794" vertical-offset="27352" max-vertical-offset="28016" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/modules/navbarfooter/navDisconnecter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/modules/navbarfooter/navbarConnecter.tpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="47" selection-start="364" selection-end="387" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="918">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/modules/navbarfooter/navbarDisconnecter.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="30" selection-start="2820" selection-end="2820" vertical-scroll-proportion="-9.5" vertical-offset="42" max-vertical-offset="612">
+        <state line="34" column="18" selection-start="1487" selection-end="1487" vertical-scroll-proportion="0.030965392" vertical-offset="561" max-vertical-offset="1377">
           <folding>
-            <element signature="tag#div#0;tag#header#0" expanded="false" />
-            <element signature="tag#div#0;tag#div#0;tag#header#0" expanded="false" />
             <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#header#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#header#0;n#!!top" expanded="true" />
-            <element signature="tag#nav#0;tag#div#0;tag#header#0" expanded="false" />
+            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#nav#0;n#div#0;n#header#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#0;n#nav#0;n#div#0;n#header#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#2;n#ul#0;n#div#0;n#nav#0;n#div#0;n#header#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#3;n#ul#0;n#div#0;n#nav#0;n#div#0;n#header#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#4;n#ul#0;n#div#0;n#nav#0;n#div#0;n#header#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h3#0;n#a#1;n#div#0;n#div#0;n#div#1;n#header#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#1;n#header#0;n#!!top" expanded="true" />
-            <element signature="tag#div#1;tag#div#0;tag#div#0;tag#div#1;tag#header#0" expanded="false" />
             <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#1;n#header#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#1;n#header#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#1;n#header#0;n#!!top" expanded="true" />
@@ -814,31 +780,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/markerclusterer.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1642" column="0" selection-start="53656" selection-end="53656" vertical-scroll-proportion="0.9639794" vertical-offset="27352" max-vertical-offset="28016">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state line="22" column="73" selection-start="961" selection-end="961" vertical-scroll-proportion="19.615385" vertical-offset="884" max-vertical-offset="3927">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/css/default.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="182" column="1" selection-start="3359" selection-end="3359" vertical-scroll-proportion="0.0" vertical-offset="2668" max-vertical-offset="3264">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/modules/principal/principal.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="228" column="121" selection-start="9083" selection-end="9083" vertical-scroll-proportion="0.0" vertical-offset="3480" max-vertical-offset="5848">
+        <state line="155" column="38" selection-start="5386" selection-end="5402" vertical-scroll-proportion="0.0" vertical-offset="2256" max-vertical-offset="5848">
           <folding>
-            <marker date="1388586372627" expanded="false" signature="6553:6730" placeholder="..." />
-            <marker date="1388586372627" expanded="false" signature="6861:6894" placeholder="..." />
-            <marker date="1388586372627" expanded="false" signature="7050:7082" placeholder="..." />
-            <marker date="1388586372627" expanded="false" signature="7263:7316" placeholder="..." />
-            <marker date="1388586372627" expanded="false" signature="7613:7628" placeholder="..." />
+            <marker date="1388669722888" expanded="false" signature="6571:6748" placeholder="..." />
+            <marker date="1388669722888" expanded="false" signature="6879:6912" placeholder="..." />
+            <marker date="1388669722888" expanded="false" signature="7068:7100" placeholder="..." />
+            <marker date="1388669722888" expanded="false" signature="7281:7334" placeholder="..." />
+            <marker date="1388669722888" expanded="false" signature="7631:7646" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/modules/principalsidebar/principalsidebar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="199" column="60" selection-start="8198" selection-end="8198" vertical-scroll-proportion="3.8576329" vertical-offset="1134" max-vertical-offset="3621">
+        <state line="168" column="45" selection-start="6868" selection-end="6868" vertical-scroll-proportion="0.5626072" vertical-offset="2528" max-vertical-offset="3621">
           <folding />
         </state>
       </provider>

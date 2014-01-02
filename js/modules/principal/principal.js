@@ -147,23 +147,23 @@ myMapModule.controller('principalController', function ($rootScope, $scope, loca
                 case 'hopital':
                     json['objects'][i]['description'] = "style/img/img%20icon/marker_hopital.png";
                     break;
-                case 'shopping':
+                case 'Boutique & Shopping':
                     json['objects'][i]['description'] = "style/img/img%20icon/marker_shopping.png";
                     break;
-                case 'diver':
+                case 'Vie de nuit':
                     json['objects'][i]['description'] = "style/img/img%20icon/marker_diver.png";
                     break;
-                case 'mosque':
+                case 'Centre spirituel':
                     json['objects'][i]['description'] = "style/img/img%20icon/marker_mosque.png";
                     break;
-                case 'transport':
-                    $rootScope.donneMarker[i]['description'] = "style/img/img%20icon/marker_transport.png";
+                case 'Transport':
+                    json['objects'][i]['description'] = "style/img/img%20icon/marker_transport.png";
                     break;
                 case 'contribution':
                     json['objects'][i]['description'] = "style/img/img%20icon/marker_contribution.png";
                     break;
             }
-            //console.debug(json['objects'][i]['category']);
+            console.debug(json['objects'][i]['category']);
             marker = new google.maps.Marker({
                 position: new google.maps.LatLng(json['objects'][i]['latitude'], json['objects'][i]['longitude']),
                 map: localisation['map'],

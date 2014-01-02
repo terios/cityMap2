@@ -112,7 +112,7 @@ myMapModule.controller('sideprincipalController', function ($rootScope, $scope, 
     $scope.refreshTrieClub = function () {
         if (triecategorie['club'] == true) {
             for (i = 0; i < $rootScope.markerlist.length; i++) {
-                if ($rootScope.markerlist[i].category === 'club') {
+                if ($rootScope.markerlist[i].category === 'Vie de nuit') {
                     $rootScope.markerlist[i].setVisible(false);
                     $rootScope.markerCluster.repaint();
                 }
@@ -120,7 +120,7 @@ myMapModule.controller('sideprincipalController', function ($rootScope, $scope, 
             triecategorie['club'] = false;
         } else {
             for (i = 0; i < $rootScope.markerlist.length; i++) {
-                if ($rootScope.markerlist[i].category === 'club') {
+                if ($rootScope.markerlist[i].category === 'Vie de nuit') {
                     $rootScope.markerlist[i].setVisible(true);
                     $rootScope.markerCluster.repaint();
                 }
@@ -131,7 +131,7 @@ myMapModule.controller('sideprincipalController', function ($rootScope, $scope, 
     $scope.refreshTrieTransport = function () {
         if (triecategorie['gare'] == true) {
             for (i = 0; i < $rootScope.markerlist.length; i++) {
-                if ($rootScope.markerlist[i].category === 'gare') {
+                if ($rootScope.markerlist[i].category === 'Transport') {
                     $rootScope.markerlist[i].setVisible(false);
                     $rootScope.markerCluster.repaint();
                 }
@@ -139,7 +139,7 @@ myMapModule.controller('sideprincipalController', function ($rootScope, $scope, 
             triecategorie['gare'] = false;
         } else {
             for (i = 0; i < $rootScope.markerlist.length; i++) {
-                if ($rootScope.markerlist[i].category === 'gare') {
+                if ($rootScope.markerlist[i].category === 'Transport') {
                     $rootScope.markerlist[i].setVisible(true);
                     $rootScope.markerCluster.repaint();
                 }
@@ -150,7 +150,7 @@ myMapModule.controller('sideprincipalController', function ($rootScope, $scope, 
     $scope.refreshTrieMosque = function () {
         if (triecategorie['mosque'] == true) {
             for (i = 0; i < $rootScope.markerlist.length; i++) {
-                if ($rootScope.markerlist[i].category === 'mosque') {
+                if ($rootScope.markerlist[i].category === 'Centre spirituel') {
                     $rootScope.markerlist[i].setVisible(false);
                     $rootScope.markerCluster.repaint();
                 }
@@ -158,7 +158,7 @@ myMapModule.controller('sideprincipalController', function ($rootScope, $scope, 
             triecategorie['mosque'] = false;
         } else {
             for (i = 0; i < $rootScope.markerlist.length; i++) {
-                if ($rootScope.markerlist[i].category === 'mosque') {
+                if ($rootScope.markerlist[i].category === 'Centre spirituel') {
                     $rootScope.markerlist[i].setVisible(true);
                     $rootScope.markerCluster.repaint();
                 }
@@ -188,7 +188,7 @@ myMapModule.controller('sideprincipalController', function ($rootScope, $scope, 
     $scope.refreshTrieShop = function () {
         if (triecategorie['shop'] == true) {
             for (i = 0; i < $rootScope.markerlist.length; i++) {
-                if ($rootScope.markerlist[i].category === 'shop') {
+                if ($rootScope.markerlist[i].category === 'Boutique & Shopping') {
                     $rootScope.markerlist[i].setVisible(false);
                     $rootScope.markerCluster.repaint();
                 }
@@ -196,7 +196,7 @@ myMapModule.controller('sideprincipalController', function ($rootScope, $scope, 
             triecategorie['shop'] = false;
         } else {
             for (i = 0; i < $rootScope.markerlist.length; i++) {
-                if ($rootScope.markerlist[i].category === 'shop') {
+                if ($rootScope.markerlist[i].category === 'Boutique & Shopping') {
                     $rootScope.markerlist[i].setVisible(true);
                     $rootScope.markerCluster.repaint();
                 }

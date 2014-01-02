@@ -19,27 +19,17 @@
                     <li><a href="#" style="font-size: 15px">Lieu</a></li>
                     <li><a href="#" style="font-size: 15px">Contact</a></li>
                     <li><a href="#" style="font-size: 15px">Apropos</a></li>
-                    <li>
-                        <form id="custom-search-form" class="form-search" ng-submit="submitRechercheDetailler()">
-                            <div class="input-append">
-                                <input ng-model="recherchDetailler" type="text" class="search-query"
-                                       placeholder="recherche Detailler">
-                                <button type="submit" class="btn btn-primary">Chercher</button>
-                            </div>
-                        </form>
-                    </li>
 
-                    <li style="margin-left:150px ">
-                        <div>
-                            <div ng-controller="navDisconnecterController">
-                                <div class="btn-group">
-                                    <button class="btn btn-info" ng-click="openAuth()">Authentification / Inscription
-                                    </button>
-                                </div>
+                    <li style="margin-left: 250px">
+                        <div ng-controller="navDisconnecterController">
+                            <div class="btn-group">
+                                <button class="btn btn-mini" ng-click="openAuth()">Recherche
+                                </button>
+                                <button class="btn btn-mini btn-success" ng-click="openAuth()">Membre/Inscription
+                                </button>
                             </div>
                         </div>
                     </li>
-
                 </ul>
 
             </div>

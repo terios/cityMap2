@@ -18,6 +18,5 @@ myMapModule.controller('navDisconnecterController', function ($scope, $location)
         $scope.afficheRechDetail = false;
     }
 
-
 })
 ;
