@@ -5,7 +5,6 @@
 var myMapModule = angular.module('mymap', ['ui.bootstrap', 'kendo.directives', 'ui.router', 'ui.compat', 'ngAnimate', 'restangular']);
 
 
-
 myMapModule.factory('localisation', function () {
     var localisation = [];
     localisation['lat'] = "zero";
@@ -16,6 +15,16 @@ myMapModule.factory('localisation', function () {
     localisation['mapcenter'];
     localisation['latlon'];
     return localisation;
+});
+
+myMapModule.factory('urls', function () {
+    var urls = [];
+    var base = "http://192.168.12.109/";
+    urls['lieuList'] = base + "api/v1/article/search/";
+    urls['categorieList'] = base + "api/v1/categories";
+    urls['villeList'] = base + "api/v1/cities";
+    urls['base'] = base;
+    return urls;
 });
 
 

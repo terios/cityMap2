@@ -1,7 +1,7 @@
 /**
  * Created by Terios on 11/13/13.
  */
-myMapModule.controller('principalController', function ($rootScope, $scope, localisation, maptype) {
+myMapModule.controller('principalController', function ($rootScope, $scope, localisation, maptype, urls) {
     $rootScope.map;
     // $rootScope.lat = 0;
     $scope.lat;
@@ -73,7 +73,6 @@ myMapModule.controller('principalController', function ($rootScope, $scope, loca
                 localisation[longitude] = $rootScope.map.center.pb;
 
                 $scope.lat = localisation[longitude];
-                $scope.$apply();
             }
         )
         ;
@@ -87,17 +86,16 @@ myMapModule.controller('principalController', function ($rootScope, $scope, loca
 
 
         data = {
-            lat: position.coords.latitude, lon: position.coords.longitude, city: '', limit: false
+            lat: position.coords.latitude, lon: position.coords.longitude, city: ''
         }
 
         $.ajax({ // fonction permettant de faire de l'ajax
             type: "POST", // methode de transmission des données au fichier php
-            url: "http://mdinti.herokuapp.com/api/v1/article/search/", // url du fichier php
+            url: urls["lieuList"], // url du fichier php
             dataType: 'json',
             data: data,
             success: function (data) { // si l'appel a bien fonctionnés
 
-                console.debug(data);
                 var tmp = ajoutPing(data);
                 $("spinner-wrapper").remove();
                 $scope.$apply();
@@ -132,7 +130,6 @@ myMapModule.controller('principalController', function ($rootScope, $scope, loca
     function ajoutPing(json) {
         i = 0;
         $rootScope.markerlist = [];
-        console.debug(json['objects'].length);
         for (tmp in json['objects']) {
             switch (json['objects'][i]['category']) {
                 case 'Hotel':
@@ -144,13 +141,13 @@ myMapModule.controller('principalController', function ($rootScope, $scope, loca
                 case 'Cafe':
                     json['objects'][i]['description'] = "style/img/img%20icon/marker_cafe.png";
                     break;
-                case 'hopital':
+                case 'Hopital':
                     json['objects'][i]['description'] = "style/img/img%20icon/marker_hopital.png";
                     break;
                 case 'Boutique & Shopping':
                     json['objects'][i]['description'] = "style/img/img%20icon/marker_shopping.png";
                     break;
-                case 'Vie de nuit':
+                case 'Divers':
                     json['objects'][i]['description'] = "style/img/img%20icon/marker_diver.png";
                     break;
                 case 'Centre spirituel':
@@ -175,22 +172,28 @@ myMapModule.controller('principalController', function ($rootScope, $scope, loca
 
             $rootScope.markerlist.push(marker);
 
+            if (json['objects'][i]['gallery'].length == 0) {
+                var image = "style/img/img%20icon/imagenon.png"
+            } else {
+                image = urls['base'] + json['objects'][i]['gallery'][0];
+            }
             var boxText = document.createElement("div");
             boxText.innerHTML = '<div class="animated fadeIn">' +
-                '<div class="span3" style="border: 2px solid #0480be; margin-top: 0px; background:#333; color:#FFF; font-family:Arial; font-size:12px; border-radius:6px; -webkit-border-radius:6px; -moz-border-radius:6px;">' +
+                '<div class="span3" style="border: 2px solid #0480be; margin-top: 0px; background:#ffffff; color:#FFF; font-family:Arial; font-size:12px; border-radius:6px; -webkit-border-radius:6px; -moz-border-radius:6px;">' +
                 '<div class="row">' +
                 '<div class="row-fluid">' +
                 '<div class="span1" style="margin-left: 40px;margin-top: 5px">' +
                 '<img src="style/img/img%20icon/hotel_bg_32.png" alt="">' +
                 '</div>' +
-                '<div class="span8"><h5 style="color: #ffffff;margin-left: 15px">' + json['objects'][i]['name'] +
-                '</h5></div>' +
+                '<div class="span8"><h5 style="color: #000000;margin-left: 15px">' + json['objects'][i]['name'] + '</h5>' +
                 '</div>' +
+                '</div>' +
+                '<div class="span2 thumbnail" style="margin-left: 40px"><img src="' + image + '" width="100px"> </div>' +
                 '<div class="span3">' +
                 '<div class="row-fluid" style="margin-top: 5px;margin-bottom: 5px;margin-left: 10px;">' +
-                '<span class=" badge badge-info">vote : ' + json['objects'][i]['votes_count'] + '</span>' +
-                '<span class=" badge badge-primary">note : ' + json['objects'][i]['rating'] + '</span>' +
-                '<span class="badge badge-success"><a href="#/compte" style="color: #ffffff;">plus de detaille</a></span>' +
+                '<span style="margin-right: 5px;" class=" badge badge-info">vote : ' + json['objects'][i]['votes_count'] + '</span>' +
+                '<span style="margin-right: 5px;" class=" badge badge-primary">note : ' + json['objects'][i]['rating'] + '</span>' +
+                '<span style="margin-right: 5px;" class="badge badge-success"><a href="#/compte" style="color: #ffffff;">plus de detaille</a></span>' +
                 '</div>' +
                 '</div>' +
                 '</div>' +
@@ -205,7 +208,7 @@ myMapModule.controller('principalController', function ($rootScope, $scope, loca
                 zIndex: null,
                 boxStyle: {
                     background: "url('http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/examples/tipbox.gif') no-repeat",
-                    opacity: 0.75,
+                    opacity: 1,
                     width: "280px"
                 },
                 closeBoxMargin: "-22px 0px 0px 0px",
@@ -285,16 +288,16 @@ myMapModule.controller('principalController', function ($rootScope, $scope, loca
 
         localisation['mapcenter'] = localisation['map'].getCenter();
         //   console.debug('latitude :' + localisation['mapcenter'].pb + '  longitude : ' + localisation['mapcenter'].qb);
-        $scope.latitude = localisation['mapcenter'].nb;
-        $scope.longitude = localisation['mapcenter'].ob;
-
+        $scope.latitude = localisation['mapcenter'].b;
+        $scope.longitude = localisation['mapcenter'].d;
+        var zoom = localisation['map'].getZoom();
 
         latlon = new google.maps.LatLng($scope.latitude, $scope.longitude);
         mapholder = document.getElementById('map');
         $rootScope.maptype = maptype['mystyle'];
         var mapOptions = {
             center: latlon,
-            zoom: 14,
+            zoom: zoom,
             mapTypeControl: true,
             styles: maptype[$rootScope.maptype],
             mapTypeControlOptions: {
@@ -312,17 +315,15 @@ myMapModule.controller('principalController', function ($rootScope, $scope, loca
 
 
         data = {
-            lat: $scope.latitude, lon: $scope.longitude, city: '', limit: false
+            lat: $scope.latitude, lon: $scope.longitude, city: ''
         }
 
         $.ajax({ // fonction permettant de faire de l'ajax
             type: "POST", // methode de transmission des données au fichier php
-            url: "http://mdinti.herokuapp.com/api/v1/article/search/", // url du fichier php
+            url: urls["lieuList"], // url du fichier php
             dataType: 'json',
             data: data,
             success: function (data) { // si l'appel a bien fonctionnés
-
-                console.debug(data);
                 var tmp = ajoutPing(data);
                 $("spinner-wrapper").remove();
                 $scope.$apply();

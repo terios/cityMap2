@@ -1,9 +1,9 @@
 /**
  * Created by Terios on 11/13/13.
  */
-myMapModule.controller('sideprincipalController', function ($rootScope, $scope, localisation, maptype, triecategorie, Restangular) {
+myMapModule.controller('sideprincipalController', function ($rootScope, $scope, localisation, maptype, triecategorie, Restangular, urls) {
 
-
+    $rootScope.listville = [];
     $scope.sideVille = "";
     $scope.sideRayon = 5;
     $scope.sideMotCle = "";
@@ -17,6 +17,32 @@ myMapModule.controller('sideprincipalController', function ($rootScope, $scope, 
         hopital: triecategorie['hopital'],
         mosque: triecategorie['mosque']
     };
+
+    $scope.init = function () {
+        $.ajax({ // fonction permettant de faire de l'ajax
+            type: "GET", // methode de transmission des données au fichier php
+            url: urls["villeList"], // url du fichier php
+            dataType: 'json',
+            success: function (data) { // si l'appel a bien fonctionnés
+
+
+                for (var i = 0; i < data['objects'].length; i++) {
+                    tmp = [];
+                    tmp['nom'] = data['objects'][i]['name'];
+                    tmp['lat'] = data['objects'][i]['latitude'];
+                    tmp['long'] = data['objects'][i]['longitude'];
+                    $rootScope.listville.push(tmp);
+                }
+
+            },
+            error: function () {
+                alert('erreur');
+            }
+        });
+        $scope.villeList = $rootScope.listville;
+    }
+
+
     $scope.refreshMap = function () {
 
         maptype['mystyle'] = $scope.sideMapStyle;
@@ -27,12 +53,24 @@ myMapModule.controller('sideprincipalController', function ($rootScope, $scope, 
         localisation['lat'] = localisation['mapcenter'].nb;
         localisation['lon'] = localisation['mapcenter'].ob;
 
-        var data = {'city': $scope.sideVille, 'category': {'cafe': $scope.checkModel.cafe, 'resto': $scope.checkModel.resto, 'hotel': $scope.checkModel.hotel, 'club': $scope.checkModel.club, 'mosque': $scope.checkModel.mosque, 'transport': $scope.checkModel.transport}, 'lat': localisation['lat'], 'lon': localisation['lon'], 'tags': $scope.sideMotCle, 'rayon': $scope.sideRayon};
 
+        if ($scope.sideVille == "") {
+            var data = {'city': '', 'lat': localisation['lat'], 'lon': localisation['lon'], 'tags': $scope.sideMotCle, 'rayon': $scope.sideRayon};
+        } else {
+            var data = {'city': $scope.sideVille, 'lat': localisation['lat'], 'lon': localisation['lon'], 'tags': $scope.sideMotCle, 'rayon': $scope.sideRayon};
+            for (i = 0; i < $rootScope.listville.length; i++) {
+                if ($scope.sideVille === $rootScope.listville[i]['nom']) {
+                    localisation['lat'] = $rootScope.listville[i]['lat'];
+                    localisation['lon'] = $rootScope.listville[i]['long'];
+                    break;
+                }
+            }
+        }
+/*
 
         $.ajax({ // fonction permettant de faire de l'ajax
             type: "POST", // methode de transmission des données au fichier php
-            url: "http://192.168.68.109:8000/api/v1/article/search/", // url du fichier php
+            url: urls['lieuList'], // url du fichier php
             data: data,
             dataType: 'json',
             success: function (data) { // si l'appel a bien fonctionnés
@@ -42,9 +80,8 @@ myMapModule.controller('sideprincipalController', function ($rootScope, $scope, 
                 alert('erreur rencontrer');
             }
         });
-
-
-        console.debug(data);
+ */latlon = new google.maps.LatLng(localisation['lat'], localisation['lon']);
+        localisation['map'].panTo(latlon);
     }
     function actualise() {
         console.debug('actualisation des donnes du map');
@@ -112,7 +149,7 @@ myMapModule.controller('sideprincipalController', function ($rootScope, $scope, 
     $scope.refreshTrieClub = function () {
         if (triecategorie['club'] == true) {
             for (i = 0; i < $rootScope.markerlist.length; i++) {
-                if ($rootScope.markerlist[i].category === 'Vie de nuit') {
+                if ($rootScope.markerlist[i].category === 'Divers') {
                     $rootScope.markerlist[i].setVisible(false);
                     $rootScope.markerCluster.repaint();
                 }
@@ -120,7 +157,7 @@ myMapModule.controller('sideprincipalController', function ($rootScope, $scope, 
             triecategorie['club'] = false;
         } else {
             for (i = 0; i < $rootScope.markerlist.length; i++) {
-                if ($rootScope.markerlist[i].category === 'Vie de nuit') {
+                if ($rootScope.markerlist[i].category === 'Divers') {
                     $rootScope.markerlist[i].setVisible(true);
                     $rootScope.markerCluster.repaint();
                 }
@@ -169,7 +206,7 @@ myMapModule.controller('sideprincipalController', function ($rootScope, $scope, 
     $scope.refreshTrieHopital = function () {
         if (triecategorie['hopital'] == true) {
             for (i = 0; i < $rootScope.markerlist.length; i++) {
-                if ($rootScope.markerlist[i].category === 'hopital') {
+                if ($rootScope.markerlist[i].category === 'Hopital') {
                     $rootScope.markerlist[i].setVisible(false);
                     $rootScope.markerCluster.repaint();
                 }
@@ -177,7 +214,7 @@ myMapModule.controller('sideprincipalController', function ($rootScope, $scope, 
             triecategorie['hopital'] = false;
         } else {
             for (i = 0; i < $rootScope.markerlist.length; i++) {
-                if ($rootScope.markerlist[i].category === 'hopital') {
+                if ($rootScope.markerlist[i].category === 'Hopital') {
                     $rootScope.markerlist[i].setVisible(true);
                     $rootScope.markerCluster.repaint();
                 }

@@ -53,15 +53,12 @@
                 </div>
             </div>
 
-            <div class="control-group">
+            <div class="control-group" data-ng-controller="sideprincipalController" data-ng-init="init()">
                 <label for="email" class="control-label">Ville :</label>
 
                 <div class="controls">
                     <select ng-model="sideVille">
-                        <option>Casablanca</option>
-                        <option>Rabat</option>
-                        <option>Fes</option>
-                        <option>Agadir</option>
+                        <option ng-repeat="ville in villeList">{{ville['nom']}}</option>
                     </select>
                 </div>
             </div>
