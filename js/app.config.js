@@ -58,6 +58,40 @@ myMapModule.config(function ($stateProvider, $urlRouterProvider, RestangularProv
                 }
             }
         })
+        .state('contribution', {
+            url: '/contribution',
+            views: {
+                "navbar": {templateUrl: function () {
+                    var key = localStorage.getItem("login");
+                    //console.debug("-----> " + key);
+                    if (key == "logged") {
+                        return 'js/modules/navbarfooter/navbarConnecter.tpl.html';
+                    }
+                    return 'js/modules/navbarfooter/navbarDisconnecter.html';
+                }},
+                "content": {
+                    templateUrl: "js/modules/contribution/contribution.tpl.html"
+
+                }
+            }
+        })
+        .state('aboutus', {
+            url: '/aboutus',
+            views: {
+                "navbar": {templateUrl: function () {
+                    var key = localStorage.getItem("login");
+                    //console.debug("-----> " + key);
+                    if (key == "logged") {
+                        return 'js/modules/navbarfooter/navbarConnecter.tpl.html';
+                    }
+                    return 'js/modules/navbarfooter/navbarDisconnecter.html';
+                }},
+                "content": {
+                    templateUrl: "js/modules/aboutUs/aboutUs.tpl.html"
+
+                }
+            }
+        })
         .state('list', {
             url: '/list',
             views: {

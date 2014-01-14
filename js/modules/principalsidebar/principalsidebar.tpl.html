@@ -1,4 +1,4 @@
-<div ng-controller="sideprincipalController">
+<div data-ng-controller="sideprincipalController" data-ng-init="init()">
 
     <div id="nav2" class="span8">
         <img src="style/img/img%20icon/loupe.png" style="width: 50px; padding-bottom: 50px">
@@ -53,12 +53,12 @@
                 </div>
             </div>
 
-            <div class="control-group" data-ng-controller="sideprincipalController" data-ng-init="init()">
+            <div class="control-group">
                 <label for="email" class="control-label">Ville :</label>
 
                 <div class="controls">
                     <select ng-model="sideVille">
-                        <option ng-repeat="ville in villeList">{{ville['nom']}}</option>
+                        <option ng-repeat="ville in villeList" value="{{ville.nom}}">{{ville.nom}}</option>
                     </select>
                 </div>
             </div>

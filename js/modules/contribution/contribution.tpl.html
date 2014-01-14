@@ -1,0 +1,103 @@
+<div data-ng-controller="contributionController" data-ng-init="init()">
+    <div class="well animated fadeIn">
+        <h2 style="margin-left: 5%">Contribution</h2>
+
+        <div class="row-fluid">
+            <div class="span5" style="margin-left: 5%">
+                <form>
+                    <div class="control-group">
+                        <label class="control-label">Latitude, Longitude :</label>
+
+                        <div class="controls">
+                            <input type="text" ng-model="lat" id="lat" style="width:25%;">
+                            <input type="text" ng-model="lon" id="lon" style="width:25%;">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">Nom :</label>
+
+                        <div class="controls">
+                            <input type="text" ng-model="nomContribution" placeholder="Nom du lieu" style="width: 50%">
+                            <img ng-show="nomContributionErreur" src="style/img/img%20icon/error.png" width="20px"
+                                 class="animated fadeIn">
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label">Categorie :</label>
+
+                        <div class="controls">
+                            <select ng-model="categorie" style="width: 53%;">
+                                <option>Cafe</option>
+                                <option>Restaurent</option>
+                                <option>Hotel</option>
+                                <option>Mosque</option>
+                                <option>Divertissement</option>
+                                <option>Transport</option>
+                                <option>Mosque</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="controls-group span12" ng-controller="FileUploadCtrl">
+                        <div style="margin-left: 30px">
+                            <div class="controls">
+                                <div class="row">
+                                    <label class="btn" for="fileToUpload" style="margin-bottom: 10px">Parcourir
+                                        vos images</label><br/>
+                                    <input style="display: none" class="btn btn-info" type="file" ng-model-instant
+                                           id="fileToUpload" multiple
+                                           onchange="angular.element(this).scope().setFiles(this)"/>
+                                </div>
+                                <div id="dropbox" class="dropbox" ng-class="dropClass"><span>{{dropText}}</span></div>
+                                <div ng-show="files.length">
+                                    <div ng-repeat="file in files.slice(0)">
+                                        <span class="alert-info">{{file.webkitRelativePath || file.name}}</span>
+                                        (<span ng-switch="file.size > 1024*1024">
+                <span ng-switch-when="true">{{file.size / 1024 / 1024 | number:2}} MB</span>
+                <span ng-switch-default>{{file.size / 1024 | number:2}} kB</span>
+            </span>)
+                                    </div>
+                                    <input class="btn btn-success" type="button" ng-click="uploadFile()"
+                                           value="Telecharger"
+                                           width="100%"/>
+
+                                    <div ng-show="progressVisible" style="margin-top: 10px;">
+                                        <div class="percent">{{progress}}%</div>
+                                        <div class="progress progress-striped">
+                                            <div class="bar" ng-style="{'width': progress+'%'}"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="control-group span4" style="margin-top: 10px;">
+                        <button class="btn btn-info" style="width: 100%">Envoyer</button>
+                    </div>
+                </form>
+
+
+            </div>
+            <div class="span6">
+                <div id="map_contribution" class="map_contribution"
+                     style="width:100%;height:400px;border:solid black 1px;">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <style>
+        .map_contribution {
+            margin-left: 2%;
+            margin-right: 0%;
+            width: 98%;
+            height: 550px;
+        }
+
+        .map_contribution img {
+            max-width: none !important;
+        }
+    </style>
+</div>
